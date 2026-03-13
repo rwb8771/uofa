@@ -362,23 +362,19 @@ function renderPortraitMessage() {
   return `<div class="portrait-message">
     <div class="scoreboard">
       <div class="scoreboard-inner">
-        <div class="scoreboard-row scoreboard-title">
-          <span class="scoreboard-light"></span>
-          <span>STATS</span>
-          <span class="scoreboard-light"></span>
-        </div>
+        <span class="scoreboard-light"></span>
         <div class="scoreboard-row scoreboard-main">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-          <span>FLIP TO LANDSCAPE</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+          <span>FLIP TO LANDSCAPE FOR FULL STATS</span>
         </div>
-        <div class="scoreboard-row scoreboard-sub">TO SEE FULL STATS</div>
+        <span class="scoreboard-light"></span>
       </div>
     </div>
   </div>`;
 }
 
 function renderSpreadsheet(filtered) {
-  if (isPortrait()) return renderPortraitMessage();
+  const portraitBanner = isPortrait() ? renderPortraitMessage() : "";
 
   const cols = [
     { key: "_rank", label: "Rank", cls: "col-rank", nosort: true },
@@ -437,7 +433,7 @@ function renderSpreadsheet(filtered) {
     </tr>`;
   }).join("");
 
-  return `<div class="ss-wrapper"><table class="ss-table">
+  return `${portraitBanner}<div class="ss-wrapper"><table class="ss-table">
     <thead><tr>${headers}</tr></thead>
     <tbody>${rows}</tbody>
   </table></div>`;
