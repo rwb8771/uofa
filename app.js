@@ -274,9 +274,17 @@ function sortPlayers(arr) {
 // =============================================
 // ROSTER GRID RENDERING
 // =============================================
+function getRankBadge(rank) {
+  if (rank === 1) return `<span class="rank-badge rank-gold">#1</span>`;
+  if (rank === 2) return `<span class="rank-badge rank-silver">#2</span>`;
+  if (rank === 3) return `<span class="rank-badge rank-bronze">#3</span>`;
+  return `<span class="rank-badge">#${rank}</span>`;
+}
+
 function renderRosterGrid(filtered) {
   return `<div class="roster-grid">${filtered.map((p, i) => `
     <div class="player-card" data-index="${players.indexOf(p)}" style="animation-delay: ${i * 0.05}s">
+      ${getRankBadge(i + 1)}
       <div class="player-avatar" style="background: ${getPosColor(p.pos)}">
         <img src="${p.photo}" alt="${p.name}" class="player-photo"
              onerror="handleImgError(this, '${p.name.replace(/'/g, "\\'")}', '${p.pos}')">
@@ -305,6 +313,7 @@ function renderRosterGrid(filtered) {
 // =============================================
 function renderSpreadsheet(filtered) {
   const cols = [
+    { key: "_rank", label: "Rank", cls: "col-rank", nosort: true },
     { key: "number", label: "#", cls: "col-num" },
     { key: "name", label: "Player", cls: "col-name" },
     { key: "pos", label: "Pos", cls: "col-pos" },
@@ -322,6 +331,7 @@ function renderSpreadsheet(filtered) {
   ];
 
   const headers = cols.map(c => {
+    if (c.nosort) return `<th class="ss-th ${c.cls}">${c.label}</th>`;
     const isActive = sortField === c.key;
     const arrow = isActive ? (sortDir === "desc" ? " \u25BC" : " \u25B2") : "";
     return `<th class="ss-th ${c.cls} ${isActive ? "ss-active" : ""}" data-sort="${c.key}">${c.label}${arrow}</th>`;
@@ -329,7 +339,10 @@ function renderSpreadsheet(filtered) {
 
   const rows = filtered.map((p, i) => {
     const totalPts = Math.round(p.ppg * p.gp);
-    return `<tr class="ss-row" data-index="${players.indexOf(p)}" style="animation-delay: ${i * 0.02}s">
+    const rank = i + 1;
+    const rankCls = rank <= 3 ? ` ss-rank-${rank}` : "";
+    return `<tr class="ss-row${rankCls}" data-index="${players.indexOf(p)}" style="animation-delay: ${i * 0.02}s">
+      <td class="ss-td col-rank">${rank <= 3 ? getRankBadge(rank) : rank}</td>
       <td class="ss-td col-num">${p.number}</td>
       <td class="ss-td col-name">
         <div class="ss-player">
