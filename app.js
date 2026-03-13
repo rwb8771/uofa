@@ -73,11 +73,7 @@
 
       vec3 col = bg + vec3(1.0) * alpha;
 
-      // Only show in hero area (top portion) - fade out below
-      float heroFade = smoothstep(0.0, 0.3, uv.y + uScroll * 0.001);
-      float belowHero = step(uScroll * 0.001, 1.0 - uv.y);
-
-      gl_FragColor = vec4(col, heroFade * belowHero + (1.0 - belowHero) * 0.0);
+      gl_FragColor = vec4(col, 1.0);
     }
   `;
 
@@ -122,16 +118,10 @@
   window.addEventListener("scroll", () => { scrollY = window.scrollY; });
 
   function render(t) {
-    // Only render when hero is in view (performance optimization)
-    if (scrollY < window.innerHeight * 1.5) {
-      gl.uniform2f(uResolution, canvas.width, canvas.height);
-      gl.uniform1f(uTime, t * 0.001);
-      gl.uniform1f(uScroll, scrollY);
-      gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-      canvas.style.opacity = "1";
-    } else {
-      canvas.style.opacity = "0";
-    }
+    gl.uniform2f(uResolution, canvas.width, canvas.height);
+    gl.uniform1f(uTime, t * 0.001);
+    gl.uniform1f(uScroll, scrollY);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
     requestAnimationFrame(render);
   }
 
@@ -646,7 +636,6 @@ function closeModal() {
 // =============================================
 document.addEventListener("DOMContentLoaded", () => {
   renderRoster();
-  renderRecords();
 
   // Roster view toggle
   document.querySelectorAll(".roster .view-btn").forEach(btn => {
@@ -665,26 +654,6 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.classList.add("active");
       currentFilter = btn.dataset.filter;
       renderRoster();
-    });
-  });
-
-  // Records view toggle
-  document.querySelectorAll(".records .records-view-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll(".records .records-view-btn").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      recordsViewMode = btn.dataset.view;
-      renderRecords();
-    });
-  });
-
-  // Records category filter
-  document.querySelectorAll(".records-filter-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll(".records-filter-btn").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      currentRecordCategory = btn.dataset.category;
-      renderRecords();
     });
   });
 
