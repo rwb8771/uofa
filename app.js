@@ -1,4 +1,144 @@
 // =============================================
+// WEBGL ANIMATED PLUS BACKGROUND
+// =============================================
+(function initWebGLBackground() {
+  const canvas = document.getElementById("bgCanvas");
+  if (!canvas) return;
+
+  const gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
+  if (!gl) return; // Fallback to CSS pattern if no WebGL
+
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    gl.viewport(0, 0, canvas.width, canvas.height);
+  }
+  resize();
+  window.addEventListener("resize", resize);
+
+  const vsSource = `
+    attribute vec2 aPos;
+    void main() {
+      gl_Position = vec4(aPos, 0.0, 1.0);
+    }
+  `;
+
+  const fsSource = `
+    precision mediump float;
+    uniform vec2 uResolution;
+    uniform float uTime;
+    uniform float uScroll;
+
+    float plus(vec2 p, float size, float thickness) {
+      vec2 d = abs(p);
+      float h = min(max(d.x - thickness, d.y - size), max(d.x - size, d.y - thickness));
+      return smoothstep(0.002, -0.002, h);
+    }
+
+    void main() {
+      vec2 uv = gl_FragCoord.xy / uResolution;
+      float aspect = uResolution.x / uResolution.y;
+
+      // Navy gradient background
+      vec3 bgTop = vec3(0.0, 0.133, 0.267);    // #002244
+      vec3 bgBot = vec3(0.0, 0.2, 0.4);         // #003366
+      vec3 bg = mix(bgBot, bgTop, uv.y);
+
+      // Subtle red glow
+      float glowR = 0.12 * exp(-3.0 * length(vec2((uv.x - 0.7) * aspect, uv.y - 0.8)));
+      float glowL = 0.08 * exp(-2.5 * length(vec2((uv.x - 0.2) * aspect, uv.y - 0.2)));
+      bg += vec3(0.8, 0.0, 0.2) * (glowR + glowL);
+
+      // Grid of animated plus signs
+      float spacing = 60.0;
+      vec2 gridUV = gl_FragCoord.xy / spacing;
+      gridUV.y += uTime * 0.15 + uScroll * 0.003;
+      gridUV.x += sin(uTime * 0.1 + floor(gridUV.y) * 0.5) * 0.3;
+
+      vec2 cellId = floor(gridUV);
+      vec2 cellUV = fract(gridUV) - 0.5;
+
+      // Pseudo-random per cell
+      float rnd = fract(sin(dot(cellId, vec2(127.1, 311.7))) * 43758.5453);
+
+      // Vary size and rotation
+      float sz = 0.12 + rnd * 0.08;
+      float th = 0.03 + rnd * 0.02;
+      float angle = sin(uTime * (0.3 + rnd * 0.5) + rnd * 6.28) * 0.4;
+      float c = cos(angle), s = sin(angle);
+      vec2 rotUV = vec2(c * cellUV.x - s * cellUV.y, s * cellUV.x + c * cellUV.y);
+
+      float p = plus(rotUV, sz, th);
+      float alpha = p * (0.04 + 0.04 * sin(uTime * 0.5 + rnd * 6.28));
+
+      vec3 col = bg + vec3(1.0) * alpha;
+
+      // Only show in hero area (top portion) - fade out below
+      float heroFade = smoothstep(0.0, 0.3, uv.y + uScroll * 0.001);
+      float belowHero = step(uScroll * 0.001, 1.0 - uv.y);
+
+      gl_FragColor = vec4(col, heroFade * belowHero + (1.0 - belowHero) * 0.0);
+    }
+  `;
+
+  function compileShader(src, type) {
+    const shader = gl.createShader(type);
+    gl.shaderSource(shader, src);
+    gl.compileShader(shader);
+    if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+      gl.deleteShader(shader);
+      return null;
+    }
+    return shader;
+  }
+
+  const vs = compileShader(vsSource, gl.VERTEX_SHADER);
+  const fs = compileShader(fsSource, gl.FRAGMENT_SHADER);
+  if (!vs || !fs) return;
+
+  const program = gl.createProgram();
+  gl.attachShader(program, vs);
+  gl.attachShader(program, fs);
+  gl.linkProgram(program);
+  if (!gl.getProgramParameter(program, gl.LINK_STATUS)) return;
+
+  gl.useProgram(program);
+
+  // Full-screen quad
+  const quad = new Float32Array([-1,-1, 1,-1, -1,1, 1,1]);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, quad, gl.STATIC_DRAW);
+
+  const aPos = gl.getAttribLocation(program, "aPos");
+  gl.enableVertexAttribArray(aPos);
+  gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+
+  const uResolution = gl.getUniformLocation(program, "uResolution");
+  const uTime = gl.getUniformLocation(program, "uTime");
+  const uScroll = gl.getUniformLocation(program, "uScroll");
+
+  let scrollY = 0;
+  window.addEventListener("scroll", () => { scrollY = window.scrollY; });
+
+  function render(t) {
+    // Only render when hero is in view (performance optimization)
+    if (scrollY < window.innerHeight * 1.5) {
+      gl.uniform2f(uResolution, canvas.width, canvas.height);
+      gl.uniform1f(uTime, t * 0.001);
+      gl.uniform1f(uScroll, scrollY);
+      gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+      canvas.style.opacity = "1";
+    } else {
+      canvas.style.opacity = "0";
+    }
+    requestAnimationFrame(render);
+  }
+
+  requestAnimationFrame(render);
+})();
+
+// =============================================
 // PLAYER DATA WITH BACKSTORIES & DID-YOU-KNOW
 // =============================================
 const players = [
