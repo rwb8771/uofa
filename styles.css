@@ -413,47 +413,70 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
-/* Rank Badges */
+/* Rank Badges - subtle small pill */
 .rank-badge {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 8px;
+  left: 8px;
   z-index: 3;
   font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  font-size: 0.85rem;
-  width: 32px;
-  height: 32px;
-  display: flex;
+  font-weight: 600;
+  font-size: 0.65rem;
+  padding: 2px 8px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  background: var(--gray-800);
-  color: var(--white);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background: rgba(0,0,0,0.45);
+  color: rgba(255,255,255,0.85);
+  backdrop-filter: blur(4px);
 }
 
 .rank-gold {
-  background: linear-gradient(135deg, #f7d731, #e6ac00);
-  color: #5a3e00;
-  box-shadow: 0 2px 12px rgba(230, 172, 0, 0.4);
-  font-size: 0.95rem;
-  width: 36px;
-  height: 36px;
+  background: rgba(230, 172, 0, 0.7);
+  color: #fff;
 }
 
 .rank-silver {
-  background: linear-gradient(135deg, #d4d4d4, #a8a8a8);
-  color: #3a3a3a;
-  box-shadow: 0 2px 10px rgba(168, 168, 168, 0.4);
-  width: 34px;
-  height: 34px;
+  background: rgba(168, 168, 168, 0.6);
+  color: #fff;
 }
 
 .rank-bronze {
-  background: linear-gradient(135deg, #e8a060, #c47832);
-  color: #4a2800;
-  box-shadow: 0 2px 10px rgba(196, 120, 50, 0.4);
+  background: rgba(180, 110, 50, 0.6);
+  color: #fff;
+}
+
+/* Sort Stat Badge - overlaid on player photo */
+.sort-stat-badge {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  z-index: 3;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  padding: 4px 10px;
+  border-radius: 8px;
+  line-height: 1;
+}
+
+.sort-stat-val {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.sort-stat-lbl {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.55rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .player-card {

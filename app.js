@@ -299,6 +299,24 @@ function getRankBadge(rank) {
   return `<span class="rank-badge">#${rank}</span>`;
 }
 
+function getSortLabel(key) {
+  const labels = {
+    ppg: "PPG", rpg: "RPG", apg: "APG", fg: "FG%", three: "3P%", ft: "FT%",
+    stl: "STL", blk: "BLK", gp: "GP", min: "MIN", number: "#", name: "Name",
+    totalPts: "PTS"
+  };
+  return labels[key] || key;
+}
+
+function getSortValue(p, key) {
+  if (key === "totalPts") return Math.round(p.ppg * p.gp);
+  if (key === "fg" || key === "three" || key === "ft") {
+    const v = p[key];
+    return v > 0 ? v.toFixed(1) + "%" : "\u2014";
+  }
+  return p[key];
+}
+
 function isPortrait() {
   return window.innerHeight > window.innerWidth;
 }
@@ -314,6 +332,10 @@ function renderRosterGrid(filtered) {
         <img src="${p.photo}" alt="${p.name}" class="player-photo"
              onerror="handleImgError(this, '${p.name.replace(/'/g, "\\'")}', '${p.pos}')">
         <span class="player-number-badge">#${p.number}</span>
+        <div class="sort-stat-badge">
+          <span class="sort-stat-val">${getSortValue(p, sortField)}</span>
+          <span class="sort-stat-lbl">${getSortLabel(sortField)}</span>
+        </div>
       </div>
       <div class="player-info">
         <h3 class="player-name">${p.name}</h3>
