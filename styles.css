@@ -1663,49 +1663,7 @@ body {
   }
 }
 
-/* Landscape spreadsheet: full width, no scroll, pinch-to-zoom */
-@media (orientation: landscape) and (max-width: 1024px) {
-  .ss-wrapper {
-    overflow-x: visible;
-    touch-action: pinch-zoom;
-  }
-
-  .ss-table {
-    min-width: 0;
-    width: 100%;
-    font-size: 0.7rem;
-  }
-
-  .ss-th {
-    padding: 8px 4px;
-    font-size: 0.6rem;
-    letter-spacing: 0;
-  }
-
-  .ss-td {
-    padding: 6px 3px;
-    font-size: 0.7rem;
-  }
-
-  .ss-avatar {
-    width: 22px;
-    height: 22px;
-  }
-
-  .ss-name {
-    font-size: 0.7rem;
-  }
-
-  .ss-th.col-name {
-    min-width: 100px;
-  }
-
-  .col-rank .rank-badge {
-    width: 20px;
-    height: 20px;
-    font-size: 0.55rem;
-  }
-}
+/* Landscape spreadsheet: normal scrollable table */
 
 /* ============================================
    DESKTOP LARGE (min-width: 1400px)
