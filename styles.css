@@ -1716,8 +1716,21 @@ body {
 }
 
 /* ============================================
-   SAFE AREA (notched phones)
+   SAFE AREA (notched phones / Dynamic Island)
    ============================================ */
+@supports (padding: env(safe-area-inset-left)) {
+  @media (orientation: landscape) {
+    .ss-wrapper {
+      margin-left: env(safe-area-inset-left);
+      margin-right: env(safe-area-inset-right);
+    }
+    .roster .container {
+      padding-left: max(20px, env(safe-area-inset-left));
+      padding-right: max(20px, env(safe-area-inset-right));
+    }
+  }
+}
+
 @supports (padding: env(safe-area-inset-bottom)) {
   .footer {
     padding-bottom: calc(40px + env(safe-area-inset-bottom));
