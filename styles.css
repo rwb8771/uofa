@@ -624,7 +624,8 @@ body {
   border-color: var(--gray-300);
 }
 
-.list-player-photo-wrap {
+.list-player-avatar {
+  position: relative;
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -641,9 +642,23 @@ body {
   object-fit: cover;
 }
 
-.list-player-photo-wrap .player-initials {
+.list-player-avatar .player-initials {
   font-size: 1.2rem;
   letter-spacing: 1px;
+}
+
+.list-number-badge {
+  position: absolute;
+  bottom: -2px;
+  right: -4px;
+  background: rgba(0,0,0,0.6);
+  color: var(--white);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 0.7rem;
+  padding: 1px 6px;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
 }
 
 .list-player-number {
