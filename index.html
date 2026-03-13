@@ -10,26 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#" class="nav-logo">
-        <span class="logo-icon">A</span>
-        <span class="logo-text">WILDCATS FOR RANDY</span>
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#season">Season</a></li>
-        <li><a href="#roster">Roster</a></li>
-        <li><a href="#stats">Stats</a></li>
-        <li><a href="#highlights">Highlights</a></li>
-      </ul>
-    </div>
-  </nav>
-
   <!-- Hero Section -->
   <section class="hero" id="hero">
     <div class="hero-overlay"></div>
@@ -53,42 +33,9 @@
           <span class="record-label">Big 12</span>
         </div>
       </div>
-      <a href="#roster" class="hero-btn">View Roster</a>
-    </div>
-  </section>
-
-  <!-- Season Overview -->
-  <section class="section season" id="season">
-    <div class="container">
-      <h2 class="section-title">Season Overview</h2>
-      <p class="section-subtitle">A Historic Campaign</p>
-      <div class="season-grid">
-        <div class="season-card">
-          <div class="season-card-icon">&#127942;</div>
-          <h3>Big 12 Champions</h3>
-          <p>First outright Big 12 regular season title in program history with a 16-2 conference record.</p>
-        </div>
-        <div class="season-card">
-          <div class="season-card-icon">&#128293;</div>
-          <h3>22-Game Win Streak</h3>
-          <p>Started the season with 22 consecutive wins, tying the longest streak in school history.</p>
-        </div>
-        <div class="season-card">
-          <div class="season-card-icon">&#128200;</div>
-          <h3>Record-Setting Wins</h3>
-          <p>29 regular season wins -- the most in Arizona Wildcats basketball history.</p>
-        </div>
-        <div class="season-card">
-          <div class="season-card-icon">&#127941;</div>
-          <h3>NCAA Tournament</h3>
-          <p>No. 4 seed in the East Regional. Advanced to the Sweet Sixteen.</p>
-        </div>
-      </div>
-      <div class="coach-banner">
-        <div class="coach-info">
-          <h3>Head Coach Tommy Lloyd</h3>
-          <p>5th season at Arizona. 140 victories in five seasons -- the most by any coach in their first five years in NCAA history.</p>
-        </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll Down</span>
+        <div class="scroll-arrow"></div>
       </div>
     </div>
   </section>
@@ -97,8 +44,7 @@
   <section class="section roster" id="roster">
     <div class="container">
       <h2 class="section-title">2025-26 Roster</h2>
-      <p class="section-subtitle">Meet the Wildcats</p>
-
+      <p class="section-subtitle">Tap any player to learn more</p>
       <div class="roster-controls">
         <div class="roster-filters">
           <button class="filter-btn active" data-filter="all">All</button>
@@ -110,49 +56,16 @@
           <button class="view-btn active" data-view="grid" aria-label="Grid view">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><rect x="0" y="0" width="8" height="8" rx="1.5"/><rect x="10" y="0" width="8" height="8" rx="1.5"/><rect x="0" y="10" width="8" height="8" rx="1.5"/><rect x="10" y="10" width="8" height="8" rx="1.5"/></svg>
           </button>
-          <button class="view-btn" data-view="list" aria-label="List view">
+          <button class="view-btn" data-view="table" aria-label="Table view">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><rect x="0" y="0" width="18" height="4" rx="1.5"/><rect x="0" y="7" width="18" height="4" rx="1.5"/><rect x="0" y="14" width="18" height="4" rx="1.5"/></svg>
           </button>
         </div>
       </div>
-
-      <div class="roster-grid" id="rosterGrid">
-        <!-- Players injected by JS -->
-      </div>
+      <div id="rosterContainer"></div>
     </div>
   </section>
 
-  <!-- Stats Section -->
-  <section class="section stats" id="stats">
-    <div class="container">
-      <h2 class="section-title">Player Statistics</h2>
-      <p class="section-subtitle">Per-Game Averages</p>
-      <div class="stats-table-wrapper">
-        <table class="stats-table" id="statsTable">
-          <thead>
-            <tr>
-              <th data-sort="number">#</th>
-              <th data-sort="name">Player</th>
-              <th data-sort="pos">Pos</th>
-              <th data-sort="ppg" class="sortable">PPG</th>
-              <th data-sort="rpg" class="sortable">RPG</th>
-              <th data-sort="apg" class="sortable">APG</th>
-              <th data-sort="fg" class="sortable">FG%</th>
-              <th data-sort="three" class="sortable">3PT%</th>
-              <th data-sort="ft" class="sortable">FT%</th>
-              <th data-sort="stl" class="sortable">STL</th>
-              <th data-sort="blk" class="sortable">BLK</th>
-            </tr>
-          </thead>
-          <tbody id="statsBody">
-            <!-- Stats injected by JS -->
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- Highlights Section -->
+  <!-- Player Highlights -->
   <section class="section highlights" id="highlights">
     <div class="container">
       <h2 class="section-title">Player Highlights</h2>
@@ -162,48 +75,62 @@
           <div class="highlight-number">#5</div>
           <h3>Brayden Burries</h3>
           <p class="highlight-role">Leading Scorer</p>
-          <div class="highlight-stats">
-            <span>16.0 PPG</span><span>5.0 RPG</span><span>49.7% FG</span>
-          </div>
+          <div class="highlight-stats"><span>16.0 PPG</span><span>5.0 RPG</span><span>49.7% FG</span></div>
           <p class="highlight-desc">Set a career high of 31 points vs. Colorado with 22 in the second half. Led the team with 50 three-pointers made.</p>
         </div>
         <div class="highlight-card">
           <div class="highlight-number">#10</div>
           <h3>Koa Peat</h3>
           <p class="highlight-role">Star Freshman</p>
-          <div class="highlight-stats">
-            <span>13.8 PPG</span><span>5.3 RPG</span><span>54.8% FG</span>
-          </div>
+          <div class="highlight-stats"><span>13.8 PPG</span><span>5.3 RPG</span><span>54.8% FG</span></div>
           <p class="highlight-desc">Five-star recruit and three-time Gatorade Arizona Player of the Year. Dropped 30 points in his debut vs. Florida.</p>
         </div>
         <div class="highlight-card">
           <div class="highlight-number">#0</div>
           <h3>Jaden Bradley</h3>
           <p class="highlight-role">Floor General</p>
-          <div class="highlight-stats">
-            <span>13.4 PPG</span><span>4.6 APG</span><span>38.2% 3PT</span>
-          </div>
+          <div class="highlight-stats"><span>13.4 PPG</span><span>4.6 APG</span><span>38.2% 3PT</span></div>
           <p class="highlight-desc">Senior leader and primary facilitator. Season high of 10 assists vs. South Dakota State and 27 points vs. Florida.</p>
         </div>
         <div class="highlight-card">
           <div class="highlight-number">#13</div>
           <h3>Motiejus Krivas</h3>
           <p class="highlight-role">Rim Protector</p>
-          <div class="highlight-stats">
-            <span>10.8 PPG</span><span>8.2 RPG</span><span>1.8 BLK</span>
-          </div>
+          <div class="highlight-stats"><span>10.8 PPG</span><span>8.2 RPG</span><span>1.8 BLK</span></div>
           <p class="highlight-desc">7'2" anchor in the paint. Led the team in blocks with a season high of 6 vs. South Dakota State.</p>
         </div>
         <div class="highlight-card">
           <div class="highlight-number">#30</div>
           <h3>Tobe Awaka</h3>
           <p class="highlight-role">Big 12 6th Man of the Year</p>
-          <div class="highlight-stats">
-            <span>9.6 PPG</span><span>9.5 RPG</span><span>59.1% FG</span>
-          </div>
+          <div class="highlight-stats"><span>9.6 PPG</span><span>9.5 RPG</span><span>59.1% FG</span></div>
           <p class="highlight-desc">Team leader in total rebounds with 296. Ultra-efficient scorer. Season high of 25 points vs. ASU.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Record Holders -->
+  <section class="section records" id="records">
+    <div class="container">
+      <h2 class="section-title">All-Time Record Holders</h2>
+      <p class="section-subtitle">Arizona Wildcats Legends</p>
+      <div class="records-controls">
+        <div class="records-filters">
+          <button class="records-filter-btn active" data-category="game">Single Game</button>
+          <button class="records-filter-btn" data-category="season">Single Season</button>
+          <button class="records-filter-btn" data-category="career">Career</button>
+        </div>
+        <div class="view-toggle">
+          <button class="records-view-btn active" data-view="grid" aria-label="Grid view">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><rect x="0" y="0" width="8" height="8" rx="1.5"/><rect x="10" y="0" width="8" height="8" rx="1.5"/><rect x="0" y="10" width="8" height="8" rx="1.5"/><rect x="10" y="10" width="8" height="8" rx="1.5"/></svg>
+          </button>
+          <button class="records-view-btn" data-view="table" aria-label="Table view">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><rect x="0" y="0" width="18" height="4" rx="1.5"/><rect x="0" y="7" width="18" height="4" rx="1.5"/><rect x="0" y="14" width="18" height="4" rx="1.5"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="recordsContainer"></div>
     </div>
   </section>
 
@@ -218,11 +145,20 @@
         <p>Bear Down! &middot; 2025-26 Season</p>
         <div class="footer-updated">
           <p>Stats and roster data last updated: <strong>March 12, 2026</strong></p>
-          <p class="footer-source">Source: ESPN, Arizona Wildcats Athletics</p>
+          <p class="footer-source">Source: ESPN, Arizona Wildcats Athletics, Sports Reference</p>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- Player Modal -->
+  <div class="modal-overlay" id="playerModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-header" id="modalHeader"></div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>
