@@ -6,6 +6,7 @@ const players = [
     number: 0, name: "Jaden Bradley", pos: "G", height: "6'3\"", weight: 200, year: "SR",
     ppg: 13.3, rpg: 3.6, apg: 4.5, fg: 46.0, three: 38.2, ft: 80.1, stl: 1.6, blk: 0.1, gp: 32, min: 30.3,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4683842.png&w=350&h=254",
+    nil: { valuation: "~$1M", details: "Revenue-share deal with Arizona; RallyFuel fan-funding page" },
     backstory: "Jaden Bradley is a senior guard from Concord, North Carolina who originally committed to and played at Alabama, where he was part of the Crimson Tide's 2023 Final Four run. He transferred to Arizona ahead of the 2024-25 season seeking a bigger role and has become the team's floor general.",
     didYouKnow: [
       "Bradley was a McDonald's All-American nominee and top-30 recruit out of IMG Academy in Florida.",
@@ -17,6 +18,7 @@ const players = [
     number: 2, name: "Dwayne Aristode", pos: "F", height: "6'8\"", weight: 220, year: "FR",
     ppg: 4.4, rpg: 1.9, apg: 0.8, fg: 48.3, three: 45.2, ft: 58.8, stl: 0.6, blk: 0.1, gp: 28, min: 14.9,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105956.png&w=350&h=254",
+    nil: null,
     backstory: "Dwayne Aristode is a versatile freshman forward who arrived at Arizona as part of the highly-touted 2025 recruiting class. Known for his shooting touch and basketball IQ, he has carved out a meaningful role off the bench.",
     didYouKnow: [
       "Aristode shot an incredible 45.2% from three-point range this season, the highest on the team among rotation players.",
@@ -28,6 +30,7 @@ const players = [
     number: 3, name: "Anthony Dell'Orso", pos: "G", height: "6'6\"", weight: 205, year: "SR",
     ppg: 8.6, rpg: 2.1, apg: 2.1, fg: 39.7, three: 31.0, ft: 80.7, stl: 0.9, blk: 0.2, gp: 32, min: 21.5,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4683025.png&w=350&h=254",
+    nil: { valuation: "Mid-6 figures", details: "Revenue-share deal to return for senior season" },
     backstory: "Anthony Dell'Orso is a senior guard who transferred to Arizona after standout seasons at Campbell and Middle Tennessee. The 6'6\" sharpshooter brings veteran experience and scored over 1,500 career points across his college career before arriving in Tucson.",
     didYouKnow: [
       "Dell'Orso shot 80.7% from the free throw line this season, one of the best marks on the team.",
@@ -39,6 +42,7 @@ const players = [
     number: 5, name: "Brayden Burries", pos: "G", height: "6'4\"", weight: 205, year: "FR",
     ppg: 16.2, rpg: 4.9, apg: 2.6, fg: 49.9, three: 37.3, ft: 79.6, stl: 1.6, blk: 0.2, gp: 32, min: 29.7,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105859.png&w=350&h=254",
+    nil: { valuation: "High 6 figures", details: "Five-star recruit (#10 national, #1 combo guard); part of ~$1.77M guard allocation" },
     backstory: "Brayden Burries hails from Eleanor Roosevelt High School in California where he was one of the top-ranked guards in the 2025 class. He burst onto the scene at Arizona as an immediate impact freshman and leads the team in scoring at 16.0 PPG.",
     didYouKnow: [
       "Burries set a career high of 31 points against Colorado, scoring 22 of those in the second half alone.",
@@ -50,6 +54,7 @@ const players = [
     number: 6, name: "Bryce James", pos: "G", height: "6'5\"", weight: 195, year: "FR",
     ppg: 0, rpg: 0, apg: 0, fg: 0, three: 0, ft: 0, stl: 0, blk: 0, gp: 0, min: 0,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105860.png&w=350&h=254",
+    nil: { valuation: "~$1.3M", details: "Beats by Dre, Taco Bell, Sprite; 3.4M social media followers" },
     backstory: "Bryce James, the younger son of NBA legend LeBron James, chose Arizona over other high-profile programs. The 6'5\" freshman guard from Los Angeles brings tremendous athleticism and name recognition to the Wildcats program.",
     didYouKnow: [
       "His father LeBron James is the NBA's all-time leading scorer, and his older brother Bronny plays in the NBA.",
@@ -61,6 +66,7 @@ const players = [
     number: 7, name: "Jackson Francois", pos: "G", height: "6'5\"", weight: 160, year: "SR",
     ppg: 0.5, rpg: 0.5, apg: 0.0, fg: 100, three: 0, ft: 0, stl: 0, blk: 0, gp: 8, min: 1.5,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4912968.png&w=350&h=254",
+    nil: null,
     backstory: "Jackson Francois is a senior guard who has been a valued member of the Arizona program. Originally from Las Vegas, Nevada, he brings energy and leadership to the team's practices and locker room as a veteran presence.",
     didYouKnow: [
       "Francois shot 100% from the field during his game appearances this season -- he didn't miss a shot.",
@@ -72,6 +78,7 @@ const players = [
     number: 8, name: "Ivan Kharchenkov", pos: "F", height: "6'7\"", weight: 220, year: "FR",
     ppg: 9.8, rpg: 4.0, apg: 2.3, fg: 48.8, three: 30.2, ft: 72.9, stl: 1.4, blk: 0.3, gp: 32, min: 27.3,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105955.png&w=350&h=254",
+    nil: null,
     backstory: "Ivan Kharchenkov is a talented freshman forward who brings international flair to the Arizona roster. The 6'7\" forward has quickly adapted to the American college game and become a key contributor in Coach Lloyd's rotation.",
     didYouKnow: [
       "Kharchenkov played in all 32 games as a true freshman, averaging 27.3 minutes per game.",
@@ -83,6 +90,7 @@ const players = [
     number: 10, name: "Koa Peat", pos: "F", height: "6'8\"", weight: 235, year: "FR",
     ppg: 13.7, rpg: 5.3, apg: 2.7, fg: 54.1, three: 31.6, ft: 60.3, stl: 0.7, blk: 0.7, gp: 29, min: 27.3,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105861.png&w=350&h=254",
+    nil: { valuation: "~$1.1M", details: "Ranked 22nd in On3 NIL rankings; five-star recruit, consensus #2 overall in 2025 class" },
     backstory: "Koa Peat is a hometown hero from Gilbert, Arizona who starred at Perry High School. A five-star recruit and the consensus No. 2 overall player in the 2025 class, he was a three-time Gatorade Arizona Player of the Year before committing to the Wildcats.",
     didYouKnow: [
       "Peat exploded for 30 points in his very first college game against #3 Florida, announcing his arrival on the national stage.",
@@ -94,6 +102,7 @@ const players = [
     number: 11, name: "Jackson Cook", pos: "G", height: "6'3\"", weight: 185, year: "SO",
     ppg: 0.0, rpg: 0.1, apg: 0.0, fg: 0, three: 0, ft: 0, stl: 0, blk: 0, gp: 8, min: 1.4,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4912971.png&w=350&h=254",
+    nil: null,
     backstory: "Jackson Cook is a sophomore guard who continues to develop within the Arizona program. A walk-on who earned his spot through hard work in practice, he represents the grit and determination that defines Wildcat basketball.",
     didYouKnow: [
       "Cook is one of the few walk-ons on the Arizona roster, earning his spot through pure effort and dedication.",
@@ -105,6 +114,7 @@ const players = [
     number: 13, name: "Motiejus Krivas", pos: "C", height: "7'2\"", weight: 260, year: "JR",
     ppg: 10.7, rpg: 8.3, apg: 1.0, fg: 57.7, three: 36.4, ft: 78.1, stl: 0.7, blk: 1.8, gp: 32, min: 24.9,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4912880.png&w=350&h=254",
+    nil: { valuation: "Mid-6 figures", details: "Revenue-share deal to return; projected late first-round 2026 NBA Draft pick" },
     backstory: "Motiejus Krivas is a 7'2\" junior center from Kaunas, Lithuania. He came to Arizona as a raw but talented big man and has developed into one of the most dominant centers in the Big 12, providing elite rim protection and efficient scoring.",
     didYouKnow: [
       "Krivas recorded a season-high 6 blocks in a single game against South Dakota State.",
@@ -116,6 +126,7 @@ const players = [
     number: 15, name: "Sidi Gueye", pos: "F", height: "6'11\"", weight: 215, year: "FR",
     ppg: 1.3, rpg: 0.7, apg: 0.2, fg: 68.8, three: 0, ft: 63.6, stl: 0.1, blk: 0.3, gp: 23, min: 3.5,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105957.png&w=350&h=254",
+    nil: null,
     backstory: "Sidi Gueye is a 6'11\" freshman forward with tremendous upside. His length and athleticism make him a project player with a very high ceiling as he continues to add strength and refine his skills under Coach Lloyd's development program.",
     didYouKnow: [
       "Gueye shot an efficient 68.8% from the field in his limited appearances this season.",
@@ -127,6 +138,7 @@ const players = [
     number: 20, name: "Mabil Mawut", pos: "F", height: "6'11\"", weight: 200, year: "FR",
     ppg: 0, rpg: 0, apg: 0, fg: 0, three: 0, ft: 0, stl: 0, blk: 0, gp: 0, min: 0,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105958.png&w=350&h=254",
+    nil: null,
     backstory: "Mabil Mawut is a 6'11\" freshman forward who is redshirting and developing this season. The long, athletic forward has the physical profile of a modern stretch-four and is using this year to prepare for a bigger role in future seasons.",
     didYouKnow: [
       "At 6'11\" and 200 pounds, Mawut has one of the longest wingspans on the team.",
@@ -138,6 +150,7 @@ const players = [
     number: 21, name: "Evan Nelson", pos: "G", height: "6'2\"", weight: 175, year: "SR",
     ppg: 0.6, rpg: 0.5, apg: 0.3, fg: 41.7, three: 44.4, ft: 0, stl: 0.1, blk: 0.0, gp: 22, min: 3.5,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4683843.png&w=350&h=254",
+    nil: null,
     backstory: "Evan Nelson is a senior guard who transferred to Arizona from Harvard, bringing Ivy League smarts and experience to the Wildcats. The 6'2\" guard provides veteran depth and leadership in the backcourt.",
     didYouKnow: [
       "Nelson transferred from Harvard, one of only a few Ivy League-to-Power Five transfers in recent years.",
@@ -149,6 +162,7 @@ const players = [
     number: 22, name: "Addison Arnold", pos: "G", height: "6'3\"", weight: 185, year: "SO",
     ppg: 0.3, rpg: 0.4, apg: 0.2, fg: 18.2, three: 0, ft: 100, stl: 0, blk: 0.1, gp: 18, min: 2.2,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4912970.png&w=350&h=254",
+    nil: null,
     backstory: "Addison Arnold is a sophomore guard developing in the Arizona program. He shot 100% from the free throw line in his appearances this season and continues to work on earning a larger role within the rotation.",
     didYouKnow: [
       "Arnold was a perfect 100% from the free-throw line during his game appearances this season.",
@@ -160,6 +174,7 @@ const players = [
     number: 30, name: "Tobe Awaka", pos: "F", height: "6'8\"", weight: 255, year: "SR",
     ppg: 9.7, rpg: 9.6, apg: 0.8, fg: 59.9, three: 50.0, ft: 66.2, stl: 0.4, blk: 0.8, gp: 32, min: 21.4,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4683028.png&w=350&h=254",
+    nil: { valuation: "Mid-6 figures", details: "NIL merchandise via Athlete's Thread; revenue-share deal to return" },
     backstory: "Tobe Awaka is a senior forward and the heart of Arizona's bench unit. Originally from Nigeria, he came to the U.S. to pursue basketball and has developed into one of the most impactful sixth men in college basketball, earning Big 12 Sixth Man of the Year honors.",
     didYouKnow: [
       "Awaka won the Big 12 Sixth Man of the Year award, a testament to his incredible impact off the bench.",
@@ -181,45 +196,44 @@ const players = [
 ];
 
 // =============================================
-// RECORD HOLDERS DATA
+// COACHING STAFF DATA
 // =============================================
-const records = {
-  game: [
-    { record: "Most Points", player: "Ernie McCray", value: "46", detail: "vs. Cal State LA, 1961", pos: "F", photo: "" },
-    { record: "Most Rebounds", player: "Bob Elliott", value: "25", detail: "vs. Northern Arizona, 1976", pos: "F/C", photo: "" },
-    { record: "Most Assists", player: "Russell Brown", value: "16", detail: "vs. Arizona State, 1983", pos: "G", photo: "" },
-    { record: "Most Blocks", player: "Loren Woods", value: "10", detail: "vs. Oregon, 2001", pos: "C", photo: "" },
-    { record: "Most Steals", player: "Damon Stoudamire", value: "8", detail: "vs. Oregon State, 1995", pos: "G", photo: "" },
-    { record: "Most 3-Pointers", player: "Salim Stoudamire", value: "10", detail: "vs. Stanford, 2005", pos: "G", photo: "" }
-  ],
-  season: [
-    { record: "Most Points", player: "Ernie McCray", value: "649", detail: "1960-61 season", pos: "F", photo: "" },
-    { record: "Highest PPG", player: "Coniel Norman", value: "24.7", detail: "1973-74 season", pos: "G/F", photo: "" },
-    { record: "Most Rebounds", player: "Albert Johnson", value: "393", detail: "1965-66 season", pos: "F", photo: "" },
-    { record: "Most Assists", player: "Russell Brown", value: "247", detail: "1978-79 season (9.1 APG)", pos: "G", photo: "" },
-    { record: "Most Blocks", player: "Christian Koloko", value: "102", detail: "2021-22 season", pos: "C", photo: "" },
-    { record: "Most 3-Pointers", player: "Salim Stoudamire", value: "120", detail: "2004-05 season", pos: "G", photo: "" },
-    { record: "Most Wins", player: "2024-25 Team", value: "32", detail: "32-5 overall record", pos: "Team", photo: "" }
-  ],
-  career: [
-    { record: "Most Points", player: "Sean Elliott", value: "2,555", detail: "1985-89, NBA #3 pick", pos: "F", photo: "" },
-    { record: "2nd Most Points", player: "Steve Kerr", value: "2,024", detail: "1984-88, 5x NBA Champion coach", pos: "G", photo: "" },
-    { record: "3rd Most Points", player: "Bob Elliott", value: "1,906", detail: "1973-77", pos: "F/C", photo: "" },
-    { record: "Most Rebounds", player: "Bob Elliott", value: "1,095", detail: "1973-77", pos: "F/C", photo: "" },
-    { record: "Most Assists", player: "Damon Stoudamire", value: "698", detail: "1991-95, NBA ROY 1996", pos: "G", photo: "" },
-    { record: "Most Blocks", player: "Loren Woods", value: "283", detail: "1999-2001", pos: "C", photo: "" },
-    { record: "Most Steals", player: "Damon Stoudamire", value: "246", detail: "1991-95", pos: "G", photo: "" },
-    { record: "Best Career 3PT%", player: "Steve Kerr", value: "57.3%", detail: "1984-88, NCAA record at the time", pos: "G", photo: "" }
-  ]
-};
+const coaches = [
+  {
+    name: "Tommy Lloyd", role: "Head Coach",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4912880.png&w=350&h=254",
+    bio: "Fifth-year head coach. 2025 Big 12 Coach of the Year. 141 career wins, the most for any head coach in his first five seasons at Arizona. Previously spent 20+ years as associate head coach at Gonzaga under Mark Few."
+  },
+  {
+    name: "Jack Murphy", role: "Associate Head Coach",
+    photo: "",
+    bio: "Associate head coach under Tommy Lloyd. Has been a key part of Lloyd's staff since the beginning of his tenure at Arizona, helping with game strategy and recruiting."
+  },
+  {
+    name: "Brandon Chappell", role: "Assistant Coach",
+    photo: "",
+    bio: "Hired May 2025 from Texas, where he spent three seasons as an assistant. Previously coached at UNLV, Lamar, and Arkansas-Fort Smith. Replaces the retired Steve Robinson."
+  },
+  {
+    name: "Evan Manning", role: "Assistant Coach",
+    photo: "",
+    bio: "Promoted to assistant coach in September 2025 after two seasons as Director of Basketball Operations. Son of legendary Kansas basketball player Danny Manning. Assists with on-court coaching, player development, and scouting reports."
+  },
+  {
+    name: "Austin Torres", role: "Director of Operations",
+    photo: "",
+    bio: "Hired September 2025 as Director of Basketball Operations. Returns to Lloyd's staff after a year as an assistant coach at Notre Dame Prep. Previously served as a graduate assistant for two seasons with the Wildcats."
+  }
+];
 
 // =============================================
 // STATE
 // =============================================
 let rosterViewMode = "grid";
-let recordsViewMode = "grid";
 let currentFilter = "all";
-let currentRecordCategory = "game";
+
+// Sort players by PPG descending (default order)
+players.sort((a, b) => b.ppg - a.ppg);
 
 // =============================================
 // HELPERS
@@ -300,65 +314,67 @@ function renderRosterList(filtered) {
   `).join("")}</div>`;
 }
 
-function renderRoster() {
-  const container = document.getElementById("rosterContainer");
-  const filtered = currentFilter === "all" ? players : players.filter(p => p.pos === currentFilter);
-  container.innerHTML = rosterViewMode === "grid" ? renderRosterGrid(filtered) : renderRosterList(filtered);
-
-  // Attach click handlers
-  container.querySelectorAll("[data-index]").forEach(el => {
-    el.addEventListener("click", () => openPlayerModal(parseInt(el.dataset.index)));
-    el.style.cursor = "pointer";
-  });
-}
-
-// =============================================
-// RECORDS RENDERING
-// =============================================
-function renderRecordsGrid(data) {
-  return `<div class="records-grid">${data.map((r, i) => `
-    <div class="record-card" data-record='${JSON.stringify(r).replace(/'/g, "&#39;")}' style="animation-delay: ${i * 0.05}s">
-      <div class="record-card-top">
-        <div class="record-value">${r.value}</div>
-        <div class="record-label">${r.record}</div>
+function renderCoachesGrid() {
+  return `<div class="roster-grid">${coaches.map((c, i) => `
+    <div class="player-card coach-card" style="animation-delay: ${i * 0.05}s">
+      <div class="player-avatar" style="background: #002244">
+        ${c.photo ? `<img src="${c.photo}" alt="${c.name}" class="player-photo"
+             onerror="handleImgError(this, '${c.name.replace(/'/g, "\\'")}', 'C')">` :
+          `<span class="player-initials">${getInitials(c.name)}</span>`}
       </div>
-      <div class="record-card-bottom">
-        <h3 class="record-player">${r.player}</h3>
-        <p class="record-detail">${r.detail}</p>
-        <span class="record-pos">${r.pos}</span>
+      <div class="player-info">
+        <h3 class="player-name">${c.name}</h3>
+        <span class="coach-role">${c.role}</span>
+        <p class="coach-bio">${c.bio}</p>
       </div>
     </div>
   `).join("")}</div>`;
 }
 
-function renderRecordsTable(data) {
-  return `<div class="spreadsheet-wrapper"><table class="spreadsheet records-spreadsheet">
-    <thead><tr>
-      <th>Record</th><th>Player</th><th>Value</th><th>Details</th><th>Pos</th>
-    </tr></thead>
-    <tbody>${data.map((r, i) => `
-      <tr class="spreadsheet-row" data-record='${JSON.stringify(r).replace(/'/g, "&#39;")}' style="animation-delay: ${i * 0.03}s">
-        <td class="cell-record-name">${r.record}</td>
-        <td class="cell-player"><strong>${r.player}</strong></td>
-        <td class="cell-highlight">${r.value}</td>
-        <td>${r.detail}</td>
-        <td><span class="pos-tag pos-${r.pos === 'G' ? 'G' : r.pos === 'C' ? 'C' : 'F'}">${r.pos}</span></td>
-      </tr>
-    `).join("")}</tbody>
-  </table></div>`;
+function renderCoachesList() {
+  return `<div class="roster-list">${coaches.map((c, i) => `
+    <div class="player-list-item" style="animation-delay: ${i * 0.03}s">
+      <div class="list-player-avatar" style="background: #002244">
+        ${c.photo ? `<img src="${c.photo}" alt="${c.name}" class="list-player-photo"
+             onerror="handleImgError(this, '${c.name.replace(/'/g, "\\'")}', 'C')">` :
+          `<span class="player-initials">${getInitials(c.name)}</span>`}
+      </div>
+      <div class="list-player-info">
+        <h3 class="list-player-name">${c.name}</h3>
+        <div class="list-player-meta">
+          <span class="coach-role">${c.role}</span>
+        </div>
+      </div>
+      <div class="list-player-stats">
+        <span style="font-size: 0.85rem; color: var(--gray-600); line-height: 1.5">${c.bio}</span>
+      </div>
+    </div>
+  `).join("")}</div>`;
 }
 
-function renderRecords() {
-  const container = document.getElementById("recordsContainer");
-  const data = records[currentRecordCategory];
-  container.innerHTML = recordsViewMode === "grid" ? renderRecordsGrid(data) : renderRecordsTable(data);
+function renderRoster() {
+  const container = document.getElementById("rosterContainer");
 
-  // Click handlers for record cards/rows
-  container.querySelectorAll("[data-record]").forEach(el => {
-    el.addEventListener("click", () => {
-      const r = JSON.parse(el.dataset.record);
-      openRecordModal(r);
-    });
+  if (currentFilter === "coaches") {
+    container.innerHTML = rosterViewMode === "grid" ? renderCoachesGrid() : renderCoachesList();
+    return;
+  }
+
+  let filtered;
+  const yearFilters = ["FR", "SO", "JR", "SR"];
+  if (currentFilter === "all") {
+    filtered = players;
+  } else if (yearFilters.includes(currentFilter)) {
+    filtered = players.filter(p => p.year === currentFilter);
+  } else {
+    filtered = players.filter(p => p.pos === currentFilter);
+  }
+
+  container.innerHTML = rosterViewMode === "grid" ? renderRosterGrid(filtered) : renderRosterList(filtered);
+
+  // Attach click handlers
+  container.querySelectorAll("[data-index]").forEach(el => {
+    el.addEventListener("click", () => openPlayerModal(parseInt(el.dataset.index)));
     el.style.cursor = "pointer";
   });
 }
@@ -465,36 +481,6 @@ function openPlayerModal(index) {
   }, 10);
 }
 
-function openRecordModal(r) {
-  const modal = document.getElementById("playerModal");
-  const header = document.getElementById("modalHeader");
-  const body = document.getElementById("modalBody");
-  const posColor = r.pos === "G" ? "#cc0033" : r.pos === "C" ? "#1a1a2e" : "#003366";
-
-  header.innerHTML = `
-    <div class="modal-photo-wrap" style="background: ${posColor}">
-      <span class="modal-initials" style="display:flex">${getInitials(r.player)}</span>
-    </div>
-    <div class="modal-header-info">
-      <span class="modal-number record-badge">${r.value}</span>
-      <h2 class="modal-name">${r.player}</h2>
-      <div class="modal-meta">
-        <span class="player-pos-badge">${r.pos}</span>
-      </div>
-    </div>
-  `;
-
-  body.innerHTML = `
-    <div class="modal-section">
-      <h3>${r.record}</h3>
-      <p>${r.detail}</p>
-    </div>
-  `;
-
-  modal.classList.add("open");
-  document.body.style.overflow = "hidden";
-}
-
 function closeModal() {
   const modal = document.getElementById("playerModal");
   modal.classList.remove("open");
@@ -517,14 +503,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Roster filters
-  document.querySelectorAll(".filter-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      currentFilter = btn.dataset.filter;
-      renderRoster();
-    });
+  // Roster filter dropdown
+  document.getElementById("rosterFilter").addEventListener("change", (e) => {
+    currentFilter = e.target.value;
+    renderRoster();
   });
 
   // Modal close

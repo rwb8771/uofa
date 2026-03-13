@@ -50,10 +50,23 @@
       <p class="section-subtitle">Tap any player to learn more</p>
       <div class="roster-controls">
         <div class="roster-filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="G">Guards</button>
-          <button class="filter-btn" data-filter="F">Forwards</button>
-          <button class="filter-btn" data-filter="C">Centers</button>
+          <select class="filter-dropdown" id="rosterFilter">
+            <optgroup label="View">
+              <option value="all" selected>All Players</option>
+              <option value="coaches">Coaching Staff</option>
+            </optgroup>
+            <optgroup label="Position">
+              <option value="G">Guards</option>
+              <option value="F">Forwards</option>
+              <option value="C">Centers</option>
+            </optgroup>
+            <optgroup label="Class Year">
+              <option value="FR">Freshmen</option>
+              <option value="SO">Sophomores</option>
+              <option value="JR">Juniors</option>
+              <option value="SR">Seniors</option>
+            </optgroup>
+          </select>
         </div>
         <div class="view-toggle">
           <button class="view-btn active" data-view="grid" aria-label="Grid view">
