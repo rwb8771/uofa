@@ -507,7 +507,9 @@ function openPlayerModal(index) {
       <span>ARIZONA WILDCATS</span>
       <span>2025-26</span>
     </div>
-    <div class="card-flip-hint">Tap to flip</div>
+    <div class="card-flip-hint">
+      <span class="flip-icon">&#8635;</span> Click to flip
+    </div>
   `;
 
   // BACK OF CARD
@@ -555,7 +557,9 @@ function openPlayerModal(index) {
       <span>ARIZONA WILDCATS</span>
       <span>2025-26</span>
     </div>
-    <div class="card-flip-hint">Tap to flip back</div>
+    <div class="card-flip-hint">
+      <span class="flip-icon">&#8635;</span> Click to flip back
+    </div>
   `;
 
   modal.classList.add("open");
