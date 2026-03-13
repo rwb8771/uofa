@@ -478,7 +478,7 @@ function openPlayerModal(index) {
 
   const totalPts = Math.round(p.ppg * p.gp);
 
-  // FRONT OF CARD
+  // FRONT OF CARD - photo + bio info only, no stats
   front.innerHTML = `
     <div class="card-front-header">
       <img src="https://a.espncdn.com/i/teamlogos/ncaa/500/12.png" alt="AZ" class="card-team-logo">
@@ -496,12 +496,6 @@ function openPlayerModal(index) {
         <span class="card-detail">${p.height} &middot; ${p.weight} lbs</span>
         <span class="card-year-badge">${p.year}</span>
       </div>
-      ${p.ppg > 0 ? `
-      <div class="card-front-stats">
-        <div class="card-fstat"><span class="card-fstat-val">${p.ppg}</span><span class="card-fstat-lbl">PPG</span></div>
-        <div class="card-fstat"><span class="card-fstat-val">${p.rpg}</span><span class="card-fstat-lbl">RPG</span></div>
-        <div class="card-fstat"><span class="card-fstat-val">${p.apg}</span><span class="card-fstat-lbl">APG</span></div>
-      </div>` : `<p class="card-redshirt">Redshirt / Limited Minutes</p>`}
     </div>
     <div class="card-front-footer">
       <span>ARIZONA WILDCATS</span>

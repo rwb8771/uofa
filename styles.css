@@ -815,7 +815,8 @@ body {
 }
 
 .card-front-photo {
-  height: 220px;
+  flex: 1;
+  min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
