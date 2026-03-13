@@ -36,10 +36,14 @@
           <span class="record-label">Big 12</span>
         </div>
       </div>
-      <div class="hero-scroll-hint">
-        <span>Scroll Down</span>
-        <div class="scroll-arrow"></div>
-      </div>
+      <a href="#roster" class="hero-roster-btn">
+        <span class="btn-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </span>
+        <span>ROSTER</span>
+        <span class="btn-arrow">&darr;</span>
+      </a>
+      <p class="hero-updated">Stats last updated: March 13, 2026</p>
     </div>
   </section>
 
@@ -47,7 +51,7 @@
   <section class="section roster" id="roster">
     <div class="container">
       <h2 class="section-title">2025-26 Roster</h2>
-      <p class="section-subtitle">Tap any player to learn more</p>
+      <p class="section-subtitle">Tap any player to see their card</p>
       <div class="roster-controls">
         <div class="roster-filters">
           <select class="filter-dropdown" id="rosterFilter">
@@ -67,6 +71,25 @@
               <option value="SR">Seniors</option>
             </optgroup>
           </select>
+          <div id="gridSortWrap">
+            <select class="filter-dropdown sort-dropdown" id="gridSort">
+              <optgroup label="Sort By">
+                <option value="ppg" selected>PPG</option>
+                <option value="rpg">RPG</option>
+                <option value="apg">APG</option>
+                <option value="fg">FG%</option>
+                <option value="three">3P%</option>
+                <option value="ft">FT%</option>
+                <option value="stl">STL</option>
+                <option value="blk">BLK</option>
+                <option value="totalPts">Total PTS</option>
+                <option value="gp">Games</option>
+                <option value="min">Minutes</option>
+                <option value="number">#</option>
+                <option value="name">Name</option>
+              </optgroup>
+            </select>
+          </div>
         </div>
         <div class="view-toggle">
           <button class="view-btn active" data-view="grid" aria-label="Grid view">
@@ -90,20 +113,19 @@
           <span>Arizona Wildcats for Randy</span>
         </div>
         <p>Bear Down! &middot; 2025-26 Season</p>
-        <div class="footer-updated">
-          <p>Stats and roster data last updated: <strong>March 13, 2026</strong></p>
-          <p class="footer-source">Source: ESPN, Arizona Wildcats Athletics, Sports Reference</p>
-        </div>
+        <p class="footer-source">Source: ESPN, Arizona Wildcats Athletics</p>
       </div>
     </div>
   </footer>
 
-  <!-- Player Modal -->
+  <!-- Basketball Card Modal -->
   <div class="modal-overlay" id="playerModal">
-    <div class="modal-card">
+    <div class="bball-card-wrap">
       <button class="modal-close" id="modalClose">&times;</button>
-      <div class="modal-header" id="modalHeader"></div>
-      <div class="modal-body" id="modalBody"></div>
+      <div class="bball-card" id="bballCard">
+        <div class="bball-card-face bball-card-front" id="cardFront"></div>
+        <div class="bball-card-face bball-card-back" id="cardBack"></div>
+      </div>
     </div>
   </div>
 

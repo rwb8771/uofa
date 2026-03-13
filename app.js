@@ -5,7 +5,7 @@ const players = [
   {
     number: 0, name: "Jaden Bradley", pos: "G", height: "6'3\"", weight: 200, year: "SR",
     ppg: 13.3, rpg: 3.6, apg: 4.5, fg: 46.0, three: 38.2, ft: 80.1, stl: 1.6, blk: 0.1, gp: 32, min: 30.3,
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4683842.png&w=350&h=254",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4432737.png&w=350&h=254",
     nil: { valuation: "~$1M", details: "Revenue-share deal with Arizona; RallyFuel fan-funding page" },
     backstory: "Jaden Bradley is a senior guard from Concord, North Carolina who originally committed to and played at Alabama, where he was part of the Crimson Tide's 2023 Final Four run. He transferred to Arizona ahead of the 2024-25 season seeking a bigger role and has become the team's floor general.",
     didYouKnow: [
@@ -17,7 +17,7 @@ const players = [
   {
     number: 2, name: "Dwayne Aristode", pos: "F", height: "6'8\"", weight: 220, year: "FR",
     ppg: 4.4, rpg: 1.9, apg: 0.8, fg: 48.3, three: 45.2, ft: 58.8, stl: 0.6, blk: 0.1, gp: 28, min: 14.9,
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105956.png&w=350&h=254",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5186456.png&w=350&h=254",
     nil: null,
     backstory: "Dwayne Aristode is a versatile freshman forward who arrived at Arizona as part of the highly-touted 2025 recruiting class. Known for his shooting touch and basketball IQ, he has carved out a meaningful role off the bench.",
     didYouKnow: [
@@ -29,7 +29,7 @@ const players = [
   {
     number: 3, name: "Anthony Dell'Orso", pos: "G", height: "6'6\"", weight: 205, year: "SR",
     ppg: 8.6, rpg: 2.1, apg: 2.1, fg: 39.7, three: 31.0, ft: 80.7, stl: 0.9, blk: 0.2, gp: 32, min: 21.5,
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4683025.png&w=350&h=254",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5108141.png&w=350&h=254",
     nil: { valuation: "Mid-6 figures", details: "Revenue-share deal to return for senior season" },
     backstory: "Anthony Dell'Orso is a senior guard who transferred to Arizona after standout seasons at Campbell and Middle Tennessee. The 6'6\" sharpshooter brings veteran experience and scored over 1,500 career points across his college career before arriving in Tucson.",
     didYouKnow: [
@@ -41,7 +41,7 @@ const players = [
   {
     number: 5, name: "Brayden Burries", pos: "G", height: "6'4\"", weight: 205, year: "FR",
     ppg: 16.2, rpg: 4.9, apg: 2.6, fg: 49.9, three: 37.3, ft: 79.6, stl: 1.6, blk: 0.2, gp: 32, min: 29.7,
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105859.png&w=350&h=254",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5082206.png&w=350&h=254",
     nil: { valuation: "High 6 figures", details: "Five-star recruit (#10 national, #1 combo guard); part of ~$1.77M guard allocation" },
     backstory: "Brayden Burries hails from Eleanor Roosevelt High School in California where he was one of the top-ranked guards in the 2025 class. He burst onto the scene at Arizona as an immediate impact freshman and leads the team in scoring at 16.0 PPG.",
     didYouKnow: [
@@ -53,7 +53,7 @@ const players = [
   {
     number: 6, name: "Bryce James", pos: "G", height: "6'5\"", weight: 195, year: "FR",
     ppg: 0, rpg: 0, apg: 0, fg: 0, three: 0, ft: 0, stl: 0, blk: 0, gp: 0, min: 0,
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105860.png&w=350&h=254",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5082287.png&w=350&h=254",
     nil: { valuation: "~$1.3M", details: "Beats by Dre, Taco Bell, Sprite; 3.4M social media followers" },
     backstory: "Bryce James, the younger son of NBA legend LeBron James, chose Arizona over other high-profile programs. The 6'5\" freshman guard from Los Angeles brings tremendous athleticism and name recognition to the Wildcats program.",
     didYouKnow: [
@@ -65,7 +65,7 @@ const players = [
   {
     number: 7, name: "Jackson Francois", pos: "G", height: "6'5\"", weight: 160, year: "SR",
     ppg: 0.5, rpg: 0.5, apg: 0.0, fg: 100, three: 0, ft: 0, stl: 0, blk: 0, gp: 8, min: 1.5,
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4912968.png&w=350&h=254",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105542.png&w=350&h=254",
     nil: null,
     backstory: "Jackson Francois is a senior guard who has been a valued member of the Arizona program. Originally from Las Vegas, Nevada, he brings energy and leadership to the team's practices and locker room as a veteran presence.",
     didYouKnow: [
@@ -77,7 +77,7 @@ const players = [
   {
     number: 8, name: "Ivan Kharchenkov", pos: "F", height: "6'7\"", weight: 220, year: "FR",
     ppg: 9.8, rpg: 4.0, apg: 2.3, fg: 48.8, three: 30.2, ft: 72.9, stl: 1.4, blk: 0.3, gp: 32, min: 27.3,
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105955.png&w=350&h=254",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5311896.png&w=350&h=254",
     nil: null,
     backstory: "Ivan Kharchenkov is a talented freshman forward who brings international flair to the Arizona roster. The 6'7\" forward has quickly adapted to the American college game and become a key contributor in Coach Lloyd's rotation.",
     didYouKnow: [
@@ -89,7 +89,7 @@ const players = [
   {
     number: 10, name: "Koa Peat", pos: "F", height: "6'8\"", weight: 235, year: "FR",
     ppg: 13.7, rpg: 5.3, apg: 2.7, fg: 54.1, three: 31.6, ft: 60.3, stl: 0.7, blk: 0.7, gp: 29, min: 27.3,
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105861.png&w=350&h=254",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5041953.png&w=350&h=254",
     nil: { valuation: "~$1.1M", details: "Ranked 22nd in On3 NIL rankings; five-star recruit, consensus #2 overall in 2025 class" },
     backstory: "Koa Peat is a hometown hero from Gilbert, Arizona who starred at Perry High School. A five-star recruit and the consensus No. 2 overall player in the 2025 class, he was a three-time Gatorade Arizona Player of the Year before committing to the Wildcats.",
     didYouKnow: [
@@ -101,7 +101,7 @@ const players = [
   {
     number: 11, name: "Jackson Cook", pos: "G", height: "6'3\"", weight: 185, year: "SO",
     ppg: 0.0, rpg: 0.1, apg: 0.0, fg: 0, three: 0, ft: 0, stl: 0, blk: 0, gp: 8, min: 1.4,
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4912971.png&w=350&h=254",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5174956.png&w=350&h=254",
     nil: null,
     backstory: "Jackson Cook is a sophomore guard who continues to develop within the Arizona program. A walk-on who earned his spot through hard work in practice, he represents the grit and determination that defines Wildcat basketball.",
     didYouKnow: [
@@ -113,7 +113,7 @@ const players = [
   {
     number: 13, name: "Motiejus Krivas", pos: "C", height: "7'2\"", weight: 260, year: "JR",
     ppg: 10.7, rpg: 8.3, apg: 1.0, fg: 57.7, three: 36.4, ft: 78.1, stl: 0.7, blk: 1.8, gp: 32, min: 24.9,
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4912880.png&w=350&h=254",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5174954.png&w=350&h=254",
     nil: { valuation: "Mid-6 figures", details: "Revenue-share deal to return; projected late first-round 2026 NBA Draft pick" },
     backstory: "Motiejus Krivas is a 7'2\" junior center from Kaunas, Lithuania. He came to Arizona as a raw but talented big man and has developed into one of the most dominant centers in the Big 12, providing elite rim protection and efficient scoring.",
     didYouKnow: [
@@ -125,7 +125,7 @@ const players = [
   {
     number: 15, name: "Sidi Gueye", pos: "F", height: "6'11\"", weight: 215, year: "FR",
     ppg: 1.3, rpg: 0.7, apg: 0.2, fg: 68.8, three: 0, ft: 63.6, stl: 0.1, blk: 0.3, gp: 23, min: 3.5,
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105957.png&w=350&h=254",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5311897.png&w=350&h=254",
     nil: null,
     backstory: "Sidi Gueye is a 6'11\" freshman forward with tremendous upside. His length and athleticism make him a project player with a very high ceiling as he continues to add strength and refine his skills under Coach Lloyd's development program.",
     didYouKnow: [
@@ -137,7 +137,7 @@ const players = [
   {
     number: 20, name: "Mabil Mawut", pos: "F", height: "6'11\"", weight: 200, year: "FR",
     ppg: 0, rpg: 0, apg: 0, fg: 0, three: 0, ft: 0, stl: 0, blk: 0, gp: 0, min: 0,
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105958.png&w=350&h=254",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5311898.png&w=350&h=254",
     nil: null,
     backstory: "Mabil Mawut is a 6'11\" freshman forward who is redshirting and developing this season. The long, athletic forward has the physical profile of a modern stretch-four and is using this year to prepare for a bigger role in future seasons.",
     didYouKnow: [
@@ -149,7 +149,7 @@ const players = [
   {
     number: 21, name: "Evan Nelson", pos: "G", height: "6'2\"", weight: 175, year: "SR",
     ppg: 0.6, rpg: 0.5, apg: 0.3, fg: 41.7, three: 44.4, ft: 0, stl: 0.1, blk: 0.0, gp: 22, min: 3.5,
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4683843.png&w=350&h=254",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4702960.png&w=350&h=254",
     nil: null,
     backstory: "Evan Nelson is a senior guard who transferred to Arizona from Harvard, bringing Ivy League smarts and experience to the Wildcats. The 6'2\" guard provides veteran depth and leadership in the backcourt.",
     didYouKnow: [
@@ -161,7 +161,7 @@ const players = [
   {
     number: 22, name: "Addison Arnold", pos: "G", height: "6'3\"", weight: 185, year: "SO",
     ppg: 0.3, rpg: 0.4, apg: 0.2, fg: 18.2, three: 0, ft: 100, stl: 0, blk: 0.1, gp: 18, min: 2.2,
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4912970.png&w=350&h=254",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4896359.png&w=350&h=254",
     nil: null,
     backstory: "Addison Arnold is a sophomore guard developing in the Arizona program. He shot 100% from the free throw line in his appearances this season and continues to work on earning a larger role within the rotation.",
     didYouKnow: [
@@ -173,7 +173,7 @@ const players = [
   {
     number: 30, name: "Tobe Awaka", pos: "F", height: "6'8\"", weight: 255, year: "SR",
     ppg: 9.7, rpg: 9.6, apg: 0.8, fg: 59.9, three: 50.0, ft: 66.2, stl: 0.4, blk: 0.8, gp: 32, min: 21.4,
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4683028.png&w=350&h=254",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105555.png&w=350&h=254",
     nil: { valuation: "Mid-6 figures", details: "NIL merchandise via Athlete's Thread; revenue-share deal to return" },
     backstory: "Tobe Awaka is a senior forward and the heart of Arizona's bench unit. Originally from Nigeria, he came to the U.S. to pursue basketball and has developed into one of the most impactful sixth men in college basketball, earning Big 12 Sixth Man of the Year honors.",
     didYouKnow: [
@@ -185,7 +185,8 @@ const players = [
   {
     number: 42, name: "Sven Djopmo", pos: "G", height: "6'2\"", weight: 190, year: "SO",
     ppg: 0.6, rpg: 0.2, apg: 0.2, fg: 66.7, three: 0, ft: 40.0, stl: 0.1, blk: 0, gp: 17, min: 1.8,
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4912969.png&w=350&h=254",
+    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5239487.png&w=350&h=254",
+    nil: null,
     backstory: "Sven Djopmo is a sophomore guard who provides depth in the Arizona backcourt. The 6'2\" guard is continuing to develop his game and shot 66.7% from the field in his limited appearances this season.",
     didYouKnow: [
       "Djopmo shot 66.7% from the field in his appearances, making the most of his opportunities.",
@@ -201,7 +202,7 @@ const players = [
 const coaches = [
   {
     name: "Tommy Lloyd", role: "Head Coach",
-    photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4912880.png&w=350&h=254",
+    photo: "",
     bio: "Fifth-year head coach. 2025 Big 12 Coach of the Year. 141 career wins, the most for any head coach in his first five seasons at Arizona. Previously spent 20+ years as associate head coach at Gonzaga under Mark Few."
   },
   {
@@ -217,12 +218,12 @@ const coaches = [
   {
     name: "Evan Manning", role: "Assistant Coach",
     photo: "",
-    bio: "Promoted to assistant coach in September 2025 after two seasons as Director of Basketball Operations. Son of legendary Kansas basketball player Danny Manning. Assists with on-court coaching, player development, and scouting reports."
+    bio: "Promoted to assistant coach in September 2025 after two seasons as Director of Basketball Operations. Son of legendary Kansas basketball player Danny Manning."
   },
   {
     name: "Austin Torres", role: "Director of Operations",
     photo: "",
-    bio: "Hired September 2025 as Director of Basketball Operations. Returns to Lloyd's staff after a year as an assistant coach at Notre Dame Prep. Previously served as a graduate assistant for two seasons with the Wildcats."
+    bio: "Hired September 2025 as Director of Basketball Operations. Returns to Lloyd's staff after a year as an assistant coach at Notre Dame Prep."
   }
 ];
 
@@ -231,9 +232,8 @@ const coaches = [
 // =============================================
 let rosterViewMode = "grid";
 let currentFilter = "all";
-
-// Sort players by PPG descending (default order)
-players.sort((a, b) => b.ppg - a.ppg);
+let sortField = "ppg";
+let sortDir = "desc";
 
 // =============================================
 // HELPERS
@@ -257,8 +257,22 @@ function handleImgError(img, name, pos) {
   parent.insertBefore(fallback, parent.firstChild);
 }
 
+function sortPlayers(arr) {
+  return [...arr].sort((a, b) => {
+    let va = a[sortField], vb = b[sortField];
+    if (sortField === "name") {
+      return sortDir === "asc" ? va.localeCompare(vb) : vb.localeCompare(va);
+    }
+    if (sortField === "totalPts") {
+      va = Math.round(a.ppg * a.gp);
+      vb = Math.round(b.ppg * b.gp);
+    }
+    return sortDir === "asc" ? va - vb : vb - va;
+  });
+}
+
 // =============================================
-// ROSTER RENDERING
+// ROSTER GRID RENDERING
 // =============================================
 function renderRosterGrid(filtered) {
   return `<div class="roster-grid">${filtered.map((p, i) => `
@@ -286,34 +300,71 @@ function renderRosterGrid(filtered) {
   `).join("")}</div>`;
 }
 
-function renderRosterList(filtered) {
-  return `<div class="roster-list">${filtered.map((p, i) => `
-    <div class="player-list-item" data-index="${players.indexOf(p)}" style="animation-delay: ${i * 0.03}s">
-      <div class="list-player-avatar" style="background: ${getPosColor(p.pos)}">
-        <img src="${p.photo}" alt="${p.name}" class="list-player-photo"
-             onerror="handleImgError(this, '${p.name.replace(/'/g, "\\'")}', '${p.pos}')">
-        <span class="list-number-badge">#${p.number}</span>
-      </div>
-      <div class="list-player-info">
-        <h3 class="list-player-name">${p.name}</h3>
-        <div class="list-player-meta">
-          <span class="player-pos-badge">${p.pos}</span>
-          <span>${p.height} &middot; ${p.weight} lbs</span>
-          <span class="player-year">${p.year}</span>
+// =============================================
+// ROSTER SPREADSHEET (LIST VIEW)
+// =============================================
+function renderSpreadsheet(filtered) {
+  const cols = [
+    { key: "number", label: "#", cls: "col-num" },
+    { key: "name", label: "Player", cls: "col-name" },
+    { key: "pos", label: "Pos", cls: "col-pos" },
+    { key: "year", label: "Yr", cls: "col-yr" },
+    { key: "gp", label: "GP", cls: "col-stat" },
+    { key: "ppg", label: "PPG", cls: "col-stat" },
+    { key: "rpg", label: "RPG", cls: "col-stat" },
+    { key: "apg", label: "APG", cls: "col-stat" },
+    { key: "fg", label: "FG%", cls: "col-stat" },
+    { key: "three", label: "3P%", cls: "col-stat" },
+    { key: "ft", label: "FT%", cls: "col-stat" },
+    { key: "stl", label: "STL", cls: "col-stat" },
+    { key: "blk", label: "BLK", cls: "col-stat" },
+    { key: "totalPts", label: "PTS", cls: "col-stat" }
+  ];
+
+  const headers = cols.map(c => {
+    const isActive = sortField === c.key;
+    const arrow = isActive ? (sortDir === "desc" ? " \u25BC" : " \u25B2") : "";
+    return `<th class="ss-th ${c.cls} ${isActive ? "ss-active" : ""}" data-sort="${c.key}">${c.label}${arrow}</th>`;
+  }).join("");
+
+  const rows = filtered.map((p, i) => {
+    const totalPts = Math.round(p.ppg * p.gp);
+    return `<tr class="ss-row" data-index="${players.indexOf(p)}" style="animation-delay: ${i * 0.02}s">
+      <td class="ss-td col-num">${p.number}</td>
+      <td class="ss-td col-name">
+        <div class="ss-player">
+          <div class="ss-avatar" style="background: ${getPosColor(p.pos)}">
+            <img src="${p.photo}" alt="${p.name}" class="ss-avatar-img"
+                 onerror="this.style.display='none'; this.parentElement.querySelector('.ss-init').style.display='flex'">
+            <span class="ss-init" style="display:none">${getInitials(p.name)}</span>
+          </div>
+          <span class="ss-name">${p.name}</span>
         </div>
-      </div>
-      <div class="list-player-stats">
-        ${p.ppg > 0 ? `
-        <div class="list-stat"><span class="list-stat-value">${p.ppg}</span><span class="list-stat-label">PPG</span></div>
-        <div class="list-stat"><span class="list-stat-value">${p.rpg}</span><span class="list-stat-label">RPG</span></div>
-        <div class="list-stat"><span class="list-stat-value">${p.apg}</span><span class="list-stat-label">APG</span></div>
-        <div class="list-stat"><span class="list-stat-value">${p.fg.toFixed(1)}%</span><span class="list-stat-label">FG%</span></div>
-        ` : `<span class="player-limited">Limited minutes</span>`}
-      </div>
-    </div>
-  `).join("")}</div>`;
+      </td>
+      <td class="ss-td col-pos"><span class="pos-tag pos-${p.pos}">${p.pos}</span></td>
+      <td class="ss-td col-yr">${p.year}</td>
+      <td class="ss-td col-stat">${p.gp}</td>
+      <td class="ss-td col-stat ss-highlight">${p.ppg}</td>
+      <td class="ss-td col-stat">${p.rpg}</td>
+      <td class="ss-td col-stat">${p.apg}</td>
+      <td class="ss-td col-stat">${p.fg > 0 ? p.fg.toFixed(1) : "—"}</td>
+      <td class="ss-td col-stat">${p.three > 0 ? p.three.toFixed(1) : "—"}</td>
+      <td class="ss-td col-stat">${p.ft > 0 ? p.ft.toFixed(1) : "—"}</td>
+      <td class="ss-td col-stat">${p.stl}</td>
+      <td class="ss-td col-stat">${p.blk}</td>
+      <td class="ss-td col-stat ss-highlight">${totalPts}</td>
+    </tr>`;
+  }).join("");
+
+  return `<div class="ss-wrapper"><table class="ss-table">
+    <thead><tr>${headers}</tr></thead>
+    <tbody>${rows}</tbody>
+  </table></div>`;
 }
 
+// =============================================
+// COACHES RENDERING
+// =============================================
 function renderCoachesGrid() {
   return `<div class="roster-grid">${coaches.map((c, i) => `
     <div class="player-card coach-card" style="animation-delay: ${i * 0.05}s">
@@ -352,13 +403,21 @@ function renderCoachesList() {
   `).join("")}</div>`;
 }
 
+// =============================================
+// RENDER ROSTER
+// =============================================
 function renderRoster() {
   const container = document.getElementById("rosterContainer");
+  const sortControl = document.getElementById("gridSortWrap");
 
   if (currentFilter === "coaches") {
+    if (sortControl) sortControl.style.display = "none";
     container.innerHTML = rosterViewMode === "grid" ? renderCoachesGrid() : renderCoachesList();
     return;
   }
+
+  // Show/hide sort dropdown based on view
+  if (sortControl) sortControl.style.display = rosterViewMode === "grid" ? "" : "none";
 
   let filtered;
   const yearFilters = ["FR", "SO", "JR", "SR"];
@@ -370,9 +429,32 @@ function renderRoster() {
     filtered = players.filter(p => p.pos === currentFilter);
   }
 
-  container.innerHTML = rosterViewMode === "grid" ? renderRosterGrid(filtered) : renderRosterList(filtered);
+  const sorted = sortPlayers(filtered);
 
-  // Attach click handlers
+  if (rosterViewMode === "grid") {
+    container.innerHTML = renderRosterGrid(sorted);
+  } else {
+    container.innerHTML = renderSpreadsheet(sorted);
+    // Attach sort handlers on spreadsheet headers
+    container.querySelectorAll(".ss-th[data-sort]").forEach(th => {
+      th.style.cursor = "pointer";
+      th.addEventListener("click", () => {
+        const key = th.dataset.sort;
+        if (sortField === key) {
+          sortDir = sortDir === "desc" ? "asc" : "desc";
+        } else {
+          sortField = key;
+          sortDir = key === "name" ? "asc" : "desc";
+        }
+        // Sync grid sort dropdown
+        const gridSort = document.getElementById("gridSort");
+        if (gridSort) gridSort.value = sortField;
+        renderRoster();
+      });
+    });
+  }
+
+  // Attach click handlers for player cards/rows
   container.querySelectorAll("[data-index]").forEach(el => {
     el.addEventListener("click", () => openPlayerModal(parseInt(el.dataset.index)));
     el.style.cursor = "pointer";
@@ -380,117 +462,164 @@ function renderRoster() {
 }
 
 // =============================================
-// PLAYER MODAL
+// BASKETBALL CARD MODAL
 // =============================================
-let dykIndex = 0;
+let cardFlipped = false;
 
 function openPlayerModal(index) {
   const p = players[index];
-  dykIndex = 0;
+  cardFlipped = false;
   const modal = document.getElementById("playerModal");
-  const header = document.getElementById("modalHeader");
-  const body = document.getElementById("modalBody");
+  const cardInner = document.getElementById("bballCard");
+  const front = document.getElementById("cardFront");
+  const back = document.getElementById("cardBack");
 
-  header.innerHTML = `
-    <div class="modal-photo-wrap" style="background: ${getPosColor(p.pos)}">
-      <img src="${p.photo}" alt="${p.name}" class="modal-photo"
+  cardInner.classList.remove("flipped");
+
+  const totalPts = Math.round(p.ppg * p.gp);
+
+  // FRONT OF CARD
+  front.innerHTML = `
+    <div class="card-front-header">
+      <img src="https://a.espncdn.com/i/teamlogos/ncaa/500/12.png" alt="AZ" class="card-team-logo">
+      <div class="card-front-number">#${p.number}</div>
+    </div>
+    <div class="card-front-photo" style="background: ${getPosColor(p.pos)}">
+      <img src="${p.photo}" alt="${p.name}" class="card-photo-img"
            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-      <span class="modal-initials" style="display:none">${getInitials(p.name)}</span>
+      <span class="card-photo-initials" style="display:none">${getInitials(p.name)}</span>
     </div>
-    <div class="modal-header-info">
-      <span class="modal-number">#${p.number}</span>
-      <h2 class="modal-name">${p.name}</h2>
-      <div class="modal-meta">
-        <span class="player-pos-badge">${p.pos}</span>
-        <span>${p.height} &middot; ${p.weight} lbs</span>
-        <span class="player-year">${p.year}</span>
+    <div class="card-front-info">
+      <h2 class="card-player-name">${p.name}</h2>
+      <div class="card-player-meta">
+        <span class="card-pos">${p.pos}</span>
+        <span class="card-detail">${p.height} &middot; ${p.weight} lbs</span>
+        <span class="card-year-badge">${p.year}</span>
       </div>
+      ${p.ppg > 0 ? `
+      <div class="card-front-stats">
+        <div class="card-fstat"><span class="card-fstat-val">${p.ppg}</span><span class="card-fstat-lbl">PPG</span></div>
+        <div class="card-fstat"><span class="card-fstat-val">${p.rpg}</span><span class="card-fstat-lbl">RPG</span></div>
+        <div class="card-fstat"><span class="card-fstat-val">${p.apg}</span><span class="card-fstat-lbl">APG</span></div>
+      </div>` : `<p class="card-redshirt">Redshirt / Limited Minutes</p>`}
     </div>
+    <div class="card-front-footer">
+      <span>ARIZONA WILDCATS</span>
+      <span>2025-26</span>
+    </div>
+    <div class="card-flip-hint">Tap to flip</div>
   `;
 
-  body.innerHTML = `
-    <div class="modal-section">
-      <h3>About</h3>
-      <p>${p.backstory}</p>
+  // BACK OF CARD
+  back.innerHTML = `
+    <div class="card-back-header">
+      <div class="card-back-name">${p.name} <span>#${p.number}</span></div>
     </div>
-    ${p.ppg > 0 ? `
-    <div class="modal-section">
-      <h3>Season Stats</h3>
-      <div class="modal-stats-grid">
-        <div class="modal-stat"><span class="modal-stat-val">${p.ppg}</span><span class="modal-stat-lbl">PPG</span></div>
-        <div class="modal-stat"><span class="modal-stat-val">${p.rpg}</span><span class="modal-stat-lbl">RPG</span></div>
-        <div class="modal-stat"><span class="modal-stat-val">${p.apg}</span><span class="modal-stat-lbl">APG</span></div>
-        <div class="modal-stat"><span class="modal-stat-val">${p.fg.toFixed(1)}%</span><span class="modal-stat-lbl">FG%</span></div>
-        <div class="modal-stat"><span class="modal-stat-val">${p.three.toFixed(1)}%</span><span class="modal-stat-lbl">3PT%</span></div>
-        <div class="modal-stat"><span class="modal-stat-val">${p.ft.toFixed(1)}%</span><span class="modal-stat-lbl">FT%</span></div>
-        <div class="modal-stat"><span class="modal-stat-val">${p.stl}</span><span class="modal-stat-lbl">STL</span></div>
-        <div class="modal-stat"><span class="modal-stat-val">${p.blk}</span><span class="modal-stat-lbl">BLK</span></div>
-      </div>
-    </div>` : ""}
-    <div class="modal-section dyk-section">
-      <h3>Did You Know?</h3>
-      <div class="dyk-carousel">
-        <button class="dyk-arrow dyk-left" id="dykLeft">&#8249;</button>
-        <div class="dyk-content" id="dykContent">
-          <div class="dyk-card">
-            <div class="dyk-icon">?</div>
-            <p id="dykText">${p.didYouKnow[0]}</p>
-          </div>
+    <div class="card-back-scroll">
+      ${p.ppg > 0 ? `
+      <div class="card-back-section">
+        <h4>Season Stats</h4>
+        <div class="card-stats-grid">
+          <div class="card-bstat"><span class="card-bstat-val">${p.ppg}</span><span class="card-bstat-lbl">PPG</span></div>
+          <div class="card-bstat"><span class="card-bstat-val">${p.rpg}</span><span class="card-bstat-lbl">RPG</span></div>
+          <div class="card-bstat"><span class="card-bstat-val">${p.apg}</span><span class="card-bstat-lbl">APG</span></div>
+          <div class="card-bstat"><span class="card-bstat-val">${p.fg.toFixed(1)}%</span><span class="card-bstat-lbl">FG%</span></div>
+          <div class="card-bstat"><span class="card-bstat-val">${p.three > 0 ? p.three.toFixed(1) + "%" : "—"}</span><span class="card-bstat-lbl">3P%</span></div>
+          <div class="card-bstat"><span class="card-bstat-val">${p.ft > 0 ? p.ft.toFixed(1) + "%" : "—"}</span><span class="card-bstat-lbl">FT%</span></div>
+          <div class="card-bstat"><span class="card-bstat-val">${p.stl}</span><span class="card-bstat-lbl">STL</span></div>
+          <div class="card-bstat"><span class="card-bstat-val">${p.blk}</span><span class="card-bstat-lbl">BLK</span></div>
+          <div class="card-bstat"><span class="card-bstat-val">${p.gp}</span><span class="card-bstat-lbl">GP</span></div>
+          <div class="card-bstat"><span class="card-bstat-val">${p.min}</span><span class="card-bstat-lbl">MIN</span></div>
+          <div class="card-bstat"><span class="card-bstat-val">${totalPts}</span><span class="card-bstat-lbl">PTS</span></div>
+          <div class="card-bstat"><span class="card-bstat-val">${p.gp}</span><span class="card-bstat-lbl">GP</span></div>
         </div>
-        <button class="dyk-arrow dyk-right" id="dykRight">&#8250;</button>
+      </div>` : ""}
+      <div class="card-back-section">
+        <h4>About</h4>
+        <p>${p.backstory}</p>
       </div>
-      <div class="dyk-dots" id="dykDots">
-        ${p.didYouKnow.map((_, i) => `<span class="dyk-dot ${i === 0 ? 'active' : ''}" data-i="${i}"></span>`).join("")}
+      <div class="card-back-section">
+        <h4>Did You Know?</h4>
+        <ul class="card-dyk-list">
+          ${p.didYouKnow.map(fact => `<li>${fact}</li>`).join("")}
+        </ul>
       </div>
+      ${p.nil ? `
+      <div class="card-back-section card-nil-section">
+        <h4>NIL</h4>
+        <div class="card-nil-val">${p.nil.valuation}</div>
+        <p>${p.nil.details}</p>
+      </div>` : ""}
     </div>
+    <div class="card-front-footer">
+      <span>ARIZONA WILDCATS</span>
+      <span>2025-26</span>
+    </div>
+    <div class="card-flip-hint">Tap to flip back</div>
   `;
-
-  // DYK navigation
-  const updateDyk = () => {
-    document.getElementById("dykText").textContent = p.didYouKnow[dykIndex];
-    document.querySelectorAll(".dyk-dot").forEach((d, i) => d.classList.toggle("active", i === dykIndex));
-    // Animate
-    const card = document.querySelector(".dyk-card");
-    card.style.animation = "none";
-    card.offsetHeight; // trigger reflow
-    card.style.animation = "dykSlide 0.4s ease";
-  };
 
   modal.classList.add("open");
   document.body.style.overflow = "hidden";
+}
 
-  // Attach DYK handlers after modal is open
-  setTimeout(() => {
-    document.getElementById("dykLeft").addEventListener("click", (e) => {
-      e.stopPropagation();
-      dykIndex = (dykIndex - 1 + p.didYouKnow.length) % p.didYouKnow.length;
-      updateDyk();
-    });
-    document.getElementById("dykRight").addEventListener("click", (e) => {
-      e.stopPropagation();
-      dykIndex = (dykIndex + 1) % p.didYouKnow.length;
-      updateDyk();
-    });
-    document.querySelectorAll(".dyk-dot").forEach(dot => {
-      dot.addEventListener("click", (e) => {
-        e.stopPropagation();
-        dykIndex = parseInt(dot.dataset.i);
-        updateDyk();
-      });
-    });
-  }, 10);
+function flipCard() {
+  const card = document.getElementById("bballCard");
+  cardFlipped = !cardFlipped;
+  card.classList.toggle("flipped", cardFlipped);
 }
 
 function closeModal() {
   const modal = document.getElementById("playerModal");
   modal.classList.remove("open");
   document.body.style.overflow = "";
+  cardFlipped = false;
+  document.getElementById("bballCard").classList.remove("flipped");
+}
+
+// =============================================
+// HERO BACKGROUND ANIMATION
+// =============================================
+function initHeroBackground() {
+  const overlay = document.querySelector(".hero-overlay");
+  if (!overlay) return;
+  // Create floating orbs
+  for (let i = 0; i < 6; i++) {
+    const orb = document.createElement("div");
+    orb.className = "hero-orb";
+    orb.style.cssText = `
+      width: ${60 + Math.random() * 200}px;
+      height: ${60 + Math.random() * 200}px;
+      left: ${Math.random() * 100}%;
+      top: ${Math.random() * 100}%;
+      animation-delay: ${Math.random() * 8}s;
+      animation-duration: ${12 + Math.random() * 12}s;
+      opacity: ${0.03 + Math.random() * 0.07};
+    `;
+    overlay.appendChild(orb);
+  }
+}
+
+// =============================================
+// SWIPE SUPPORT FOR CARD
+// =============================================
+function initSwipeSupport() {
+  const cardContainer = document.querySelector(".bball-card-wrap");
+  if (!cardContainer) return;
+  let startX = 0;
+  cardContainer.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  }, { passive: true });
+  cardContainer.addEventListener("touchend", (e) => {
+    const diff = e.changedTouches[0].clientX - startX;
+    if (Math.abs(diff) > 50) flipCard();
+  }, { passive: true });
 }
 
 // =============================================
 // INIT
 // =============================================
 document.addEventListener("DOMContentLoaded", () => {
+  initHeroBackground();
   renderRoster();
 
   // Roster view toggle
@@ -509,6 +638,13 @@ document.addEventListener("DOMContentLoaded", () => {
     renderRoster();
   });
 
+  // Grid sort dropdown
+  document.getElementById("gridSort").addEventListener("change", (e) => {
+    sortField = e.target.value;
+    sortDir = sortField === "name" ? "asc" : "desc";
+    renderRoster();
+  });
+
   // Modal close
   document.getElementById("modalClose").addEventListener("click", closeModal);
   document.getElementById("playerModal").addEventListener("click", (e) => {
@@ -517,4 +653,20 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeModal();
   });
+
+  // Card flip on click
+  document.getElementById("bballCard").addEventListener("click", (e) => {
+    // Don't flip if clicking scrollable content on back
+    if (e.target.closest(".card-back-scroll") && cardFlipped) return;
+    flipCard();
+  });
+
+  // Swipe support
+  let startX = 0;
+  const cardEl = document.getElementById("bballCard");
+  cardEl.addEventListener("touchstart", (e) => { startX = e.touches[0].clientX; }, { passive: true });
+  cardEl.addEventListener("touchend", (e) => {
+    const diff = e.changedTouches[0].clientX - startX;
+    if (Math.abs(diff) > 50) flipCard();
+  }, { passive: true });
 });
