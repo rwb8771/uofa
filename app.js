@@ -7,6 +7,7 @@ const players = [
     ppg: 13.3, rpg: 3.6, apg: 4.5, fg: 46.0, three: 38.2, ft: 80.1, stl: 1.6, blk: 0.1, gp: 32, min: 30.3,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4432737.png&w=350&h=254",
     nil: { valuation: "~$1M", details: "Revenue-share deal with Arizona; RallyFuel fan-funding page" },
+    careerGame: { pts: 28, reb: 5, ast: 10, vs: "South Dakota State", date: "Nov 2025", summary: "Bradley orchestrated a masterclass against SDSU, pouring in 28 points while dishing out a career-high 10 assists. He controlled the tempo all night and hit clutch shots in the second half to seal the win." },
     backstory: "Jaden Bradley is a senior guard from Concord, North Carolina who originally committed to and played at Alabama, where he was part of the Crimson Tide's 2023 Final Four run. He transferred to Arizona ahead of the 2024-25 season seeking a bigger role and has become the team's floor general.",
     didYouKnow: [
       "Bradley was a McDonald's All-American nominee and top-30 recruit out of IMG Academy in Florida.",
@@ -19,6 +20,7 @@ const players = [
     ppg: 4.4, rpg: 1.9, apg: 0.8, fg: 48.3, three: 45.2, ft: 58.8, stl: 0.6, blk: 0.1, gp: 28, min: 14.9,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5186456.png&w=350&h=254",
     nil: null,
+    careerGame: { pts: 14, reb: 4, ast: 2, vs: "UCF", date: "Jan 2026", summary: "Aristode came off the bench and caught fire from beyond the arc, knocking down four three-pointers on his way to 14 points. His sharpshooting stretched the defense and opened lanes for his teammates." },
     backstory: "Dwayne Aristode is a versatile freshman forward who arrived at Arizona as part of the highly-touted 2025 recruiting class. Known for his shooting touch and basketball IQ, he has carved out a meaningful role off the bench.",
     didYouKnow: [
       "Aristode shot an incredible 45.2% from three-point range this season, the highest on the team among rotation players.",
@@ -31,6 +33,7 @@ const players = [
     ppg: 8.6, rpg: 2.1, apg: 2.1, fg: 39.7, three: 31.0, ft: 80.7, stl: 0.9, blk: 0.2, gp: 32, min: 21.5,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5108141.png&w=350&h=254",
     nil: { valuation: "Mid-6 figures", details: "Revenue-share deal to return for senior season" },
+    careerGame: { pts: 22, reb: 5, ast: 4, vs: "Kansas State", date: "Feb 2026", summary: "Dell'Orso erupted for 22 points against K-State, showcasing the scoring touch that made him a 1,500-point career scorer. He hit timely threes and got to the free throw line at will in a crucial Big 12 road win." },
     backstory: "Anthony Dell'Orso is a senior guard who transferred to Arizona after standout seasons at Campbell and Middle Tennessee. The 6'6\" sharpshooter brings veteran experience and scored over 1,500 career points across his college career before arriving in Tucson.",
     didYouKnow: [
       "Dell'Orso shot 80.7% from the free throw line this season, one of the best marks on the team.",
@@ -43,6 +46,7 @@ const players = [
     ppg: 16.2, rpg: 4.9, apg: 2.6, fg: 49.9, three: 37.3, ft: 79.6, stl: 1.6, blk: 0.2, gp: 32, min: 29.7,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5082206.png&w=350&h=254",
     nil: { valuation: "High 6 figures", details: "Five-star recruit (#10 national, #1 combo guard); part of ~$1.77M guard allocation" },
+    careerGame: { pts: 31, reb: 6, ast: 4, vs: "Colorado", date: "Jan 2026", summary: "Burries exploded for 31 points against Colorado, scoring 22 in the second half alone. The freshman sensation was unstoppable, hitting contested jumpers and finishing through contact on his way to the highest-scoring game by any Wildcat this season." },
     backstory: "Brayden Burries hails from Eleanor Roosevelt High School in California where he was one of the top-ranked guards in the 2025 class. He burst onto the scene at Arizona as an immediate impact freshman and leads the team in scoring at 16.0 PPG.",
     didYouKnow: [
       "Burries set a career high of 31 points against Colorado, scoring 22 of those in the second half alone.",
@@ -55,6 +59,7 @@ const players = [
     ppg: 0, rpg: 0, apg: 0, fg: 0, three: 0, ft: 0, stl: 0, blk: 0, gp: 0, min: 0,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5082287.png&w=350&h=254",
     nil: { valuation: "~$1.3M", details: "Beats by Dre, Taco Bell, Sprite; 3.4M social media followers" },
+    careerGame: null,
     backstory: "Bryce James, the younger son of NBA legend LeBron James, chose Arizona over other high-profile programs. The 6'5\" freshman guard from Los Angeles brings tremendous athleticism and name recognition to the Wildcats program.",
     didYouKnow: [
       "His father LeBron James is the NBA's all-time leading scorer, and his older brother Bronny plays in the NBA.",
@@ -67,6 +72,7 @@ const players = [
     ppg: 0.5, rpg: 0.5, apg: 0.0, fg: 100, three: 0, ft: 0, stl: 0, blk: 0, gp: 8, min: 1.5,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105542.png&w=350&h=254",
     nil: null,
+    careerGame: null,
     backstory: "Jackson Francois is a senior guard who has been a valued member of the Arizona program. Originally from Las Vegas, Nevada, he brings energy and leadership to the team's practices and locker room as a veteran presence.",
     didYouKnow: [
       "Francois shot 100% from the field during his game appearances this season -- he didn't miss a shot.",
@@ -79,6 +85,7 @@ const players = [
     ppg: 9.8, rpg: 4.0, apg: 2.3, fg: 48.8, three: 30.2, ft: 72.9, stl: 1.4, blk: 0.3, gp: 32, min: 27.3,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5311896.png&w=350&h=254",
     nil: null,
+    careerGame: { pts: 24, reb: 7, ast: 5, vs: "BYU", date: "Feb 2026", summary: "Kharchenkov showed why he's one of the most versatile freshmen in the country, posting 24 points, 7 boards, and 5 assists against BYU. He attacked from all three levels and played lockdown defense in a dominant all-around performance." },
     backstory: "Ivan Kharchenkov is a talented freshman forward who brings international flair to the Arizona roster. The 6'7\" forward has quickly adapted to the American college game and become a key contributor in Coach Lloyd's rotation.",
     didYouKnow: [
       "Kharchenkov played in all 32 games as a true freshman, averaging 27.3 minutes per game.",
@@ -91,6 +98,7 @@ const players = [
     ppg: 13.7, rpg: 5.3, apg: 2.7, fg: 54.1, three: 31.6, ft: 60.3, stl: 0.7, blk: 0.7, gp: 29, min: 27.3,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5041953.png&w=350&h=254",
     nil: { valuation: "~$1.1M", details: "Ranked 22nd in On3 NIL rankings; five-star recruit, consensus #2 overall in 2025 class" },
+    careerGame: { pts: 30, reb: 8, ast: 3, vs: "#3 Florida", date: "Nov 2025", summary: "In his very first college game, Peat announced his arrival on the national stage with 30 points and 8 rebounds against third-ranked Florida. The hometown hero from Gilbert, AZ looked like a seasoned veteran, attacking the rim and knocking down jumpers with ease." },
     backstory: "Koa Peat is a hometown hero from Gilbert, Arizona who starred at Perry High School. A five-star recruit and the consensus No. 2 overall player in the 2025 class, he was a three-time Gatorade Arizona Player of the Year before committing to the Wildcats.",
     didYouKnow: [
       "Peat exploded for 30 points in his very first college game against #3 Florida, announcing his arrival on the national stage.",
@@ -103,6 +111,7 @@ const players = [
     ppg: 0.0, rpg: 0.1, apg: 0.0, fg: 0, three: 0, ft: 0, stl: 0, blk: 0, gp: 8, min: 1.4,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5174956.png&w=350&h=254",
     nil: null,
+    careerGame: null,
     backstory: "Jackson Cook is a sophomore guard who continues to develop within the Arizona program. A walk-on who earned his spot through hard work in practice, he represents the grit and determination that defines Wildcat basketball.",
     didYouKnow: [
       "Cook is one of the few walk-ons on the Arizona roster, earning his spot through pure effort and dedication.",
@@ -115,6 +124,7 @@ const players = [
     ppg: 10.7, rpg: 8.3, apg: 1.0, fg: 57.7, three: 36.4, ft: 78.1, stl: 0.7, blk: 1.8, gp: 32, min: 24.9,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5174954.png&w=350&h=254",
     nil: { valuation: "Mid-6 figures", details: "Revenue-share deal to return; projected late first-round 2026 NBA Draft pick" },
+    careerGame: { pts: 22, reb: 16, ast: 2, vs: "South Dakota State", date: "Nov 2025", summary: "Krivas dominated the paint with 22 points, 16 rebounds, and 6 blocks against SDSU. The 7'2\" Lithuanian was an absolute force on both ends, altering shots at the rim while finishing with efficiency on offense." },
     backstory: "Motiejus Krivas is a 7'2\" junior center from Kaunas, Lithuania. He came to Arizona as a raw but talented big man and has developed into one of the most dominant centers in the Big 12, providing elite rim protection and efficient scoring.",
     didYouKnow: [
       "Krivas recorded a season-high 6 blocks in a single game against South Dakota State.",
@@ -127,6 +137,7 @@ const players = [
     ppg: 1.3, rpg: 0.7, apg: 0.2, fg: 68.8, three: 0, ft: 63.6, stl: 0.1, blk: 0.3, gp: 23, min: 3.5,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5311897.png&w=350&h=254",
     nil: null,
+    careerGame: null,
     backstory: "Sidi Gueye is a 6'11\" freshman forward with tremendous upside. His length and athleticism make him a project player with a very high ceiling as he continues to add strength and refine his skills under Coach Lloyd's development program.",
     didYouKnow: [
       "Gueye shot an efficient 68.8% from the field in his limited appearances this season.",
@@ -139,6 +150,7 @@ const players = [
     ppg: 0, rpg: 0, apg: 0, fg: 0, three: 0, ft: 0, stl: 0, blk: 0, gp: 0, min: 0,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5311898.png&w=350&h=254",
     nil: null,
+    careerGame: null,
     backstory: "Mabil Mawut is a 6'11\" freshman forward who is redshirting and developing this season. The long, athletic forward has the physical profile of a modern stretch-four and is using this year to prepare for a bigger role in future seasons.",
     didYouKnow: [
       "At 6'11\" and 200 pounds, Mawut has one of the longest wingspans on the team.",
@@ -151,6 +163,7 @@ const players = [
     ppg: 0.6, rpg: 0.5, apg: 0.3, fg: 41.7, three: 44.4, ft: 0, stl: 0.1, blk: 0.0, gp: 22, min: 3.5,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4702960.png&w=350&h=254",
     nil: null,
+    careerGame: null,
     backstory: "Evan Nelson is a senior guard who transferred to Arizona from Harvard, bringing Ivy League smarts and experience to the Wildcats. The 6'2\" guard provides veteran depth and leadership in the backcourt.",
     didYouKnow: [
       "Nelson transferred from Harvard, one of only a few Ivy League-to-Power Five transfers in recent years.",
@@ -163,6 +176,7 @@ const players = [
     ppg: 0.3, rpg: 0.4, apg: 0.2, fg: 18.2, three: 0, ft: 100, stl: 0, blk: 0.1, gp: 18, min: 2.2,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/4896359.png&w=350&h=254",
     nil: null,
+    careerGame: null,
     backstory: "Addison Arnold is a sophomore guard developing in the Arizona program. He shot 100% from the free throw line in his appearances this season and continues to work on earning a larger role within the rotation.",
     didYouKnow: [
       "Arnold was a perfect 100% from the free-throw line during his game appearances this season.",
@@ -175,6 +189,7 @@ const players = [
     ppg: 9.7, rpg: 9.6, apg: 0.8, fg: 59.9, three: 50.0, ft: 66.2, stl: 0.4, blk: 0.8, gp: 32, min: 21.4,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5105555.png&w=350&h=254",
     nil: { valuation: "Mid-6 figures", details: "NIL merchandise via Athlete's Thread; revenue-share deal to return" },
+    careerGame: { pts: 20, reb: 18, ast: 1, vs: "Texas Tech", date: "Feb 2026", summary: "Awaka was a double-double machine against Texas Tech, hauling in 18 rebounds to go with 20 points. Coming off the bench, he outworked every starter on the floor and was the clear difference-maker in a hard-fought Big 12 victory." },
     backstory: "Tobe Awaka is a senior forward and the heart of Arizona's bench unit. Originally from Nigeria, he came to the U.S. to pursue basketball and has developed into one of the most impactful sixth men in college basketball, earning Big 12 Sixth Man of the Year honors.",
     didYouKnow: [
       "Awaka won the Big 12 Sixth Man of the Year award, a testament to his incredible impact off the bench.",
@@ -187,6 +202,7 @@ const players = [
     ppg: 0.6, rpg: 0.2, apg: 0.2, fg: 66.7, three: 0, ft: 40.0, stl: 0.1, blk: 0, gp: 17, min: 1.8,
     photo: "https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/5239487.png&w=350&h=254",
     nil: null,
+    careerGame: null,
     backstory: "Sven Djopmo is a sophomore guard who provides depth in the Arizona backcourt. The 6'2\" guard is continuing to develop his game and shot 66.7% from the field in his limited appearances this season.",
     didYouKnow: [
       "Djopmo shot 66.7% from the field in his appearances, making the most of his opportunities.",
@@ -203,27 +219,32 @@ const coaches = [
   {
     name: "Tommy Lloyd", role: "Head Coach",
     photo: "",
-    bio: "Fifth-year head coach. 2025 Big 12 Coach of the Year. 141 career wins, the most for any head coach in his first five seasons at Arizona. Previously spent 20+ years as associate head coach at Gonzaga under Mark Few."
+    bio: "Fifth-year head coach. 2025 Big 12 Coach of the Year. 141 career wins, the most for any head coach in his first five seasons at Arizona. Previously spent 20+ years as associate head coach at Gonzaga under Mark Few.",
+    highlights: ["2022 AP Coach of the Year", "2025 Big 12 Coach of the Year", "141-28 record at Arizona", "Coached Bennedict Mathurin, Azuolas Tubelis, and Dalen Terry to the NBA"]
   },
   {
     name: "Jack Murphy", role: "Associate Head Coach",
     photo: "",
-    bio: "Associate head coach under Tommy Lloyd. Has been a key part of Lloyd's staff since the beginning of his tenure at Arizona, helping with game strategy and recruiting."
+    bio: "Associate head coach under Tommy Lloyd. Has been a key part of Lloyd's staff since the beginning of his tenure at Arizona, helping with game strategy and recruiting.",
+    highlights: ["Part of Lloyd's original staff since 2021", "Key recruiter for Arizona's top classes"]
   },
   {
     name: "Brandon Chappell", role: "Assistant Coach",
     photo: "",
-    bio: "Hired May 2025 from Texas, where he spent three seasons as an assistant. Previously coached at UNLV, Lamar, and Arkansas-Fort Smith. Replaces the retired Steve Robinson."
+    bio: "Hired May 2025 from Texas, where he spent three seasons as an assistant. Previously coached at UNLV, Lamar, and Arkansas-Fort Smith. Replaces the retired Steve Robinson.",
+    highlights: ["Coached at Texas under Rodney Terry", "Previously at UNLV"]
   },
   {
     name: "Evan Manning", role: "Assistant Coach",
     photo: "",
-    bio: "Promoted to assistant coach in September 2025 after two seasons as Director of Basketball Operations. Son of legendary Kansas basketball player Danny Manning."
+    bio: "Promoted to assistant coach in September 2025 after two seasons as Director of Basketball Operations. Son of legendary Kansas basketball player Danny Manning.",
+    highlights: ["Son of NBA #1 pick Danny Manning", "Promoted from Director of Ops in 2025"]
   },
   {
     name: "Austin Torres", role: "Director of Operations",
     photo: "",
-    bio: "Hired September 2025 as Director of Basketball Operations. Returns to Lloyd's staff after a year as an assistant coach at Notre Dame Prep."
+    bio: "Hired September 2025 as Director of Basketball Operations. Returns to Lloyd's staff after a year as an assistant coach at Notre Dame Prep.",
+    highlights: ["Former Arizona graduate assistant", "Returned from Notre Dame Prep in 2025"]
   }
 ];
 
@@ -271,9 +292,6 @@ function sortPlayers(arr) {
   });
 }
 
-// =============================================
-// ROSTER GRID RENDERING
-// =============================================
 function getRankBadge(rank) {
   if (rank === 1) return `<span class="rank-badge rank-gold">#1</span>`;
   if (rank === 2) return `<span class="rank-badge rank-silver">#2</span>`;
@@ -281,6 +299,13 @@ function getRankBadge(rank) {
   return `<span class="rank-badge">#${rank}</span>`;
 }
 
+function isPortrait() {
+  return window.innerHeight > window.innerWidth;
+}
+
+// =============================================
+// ROSTER GRID RENDERING
+// =============================================
 function renderRosterGrid(filtered) {
   return `<div class="roster-grid">${filtered.map((p, i) => `
     <div class="player-card" data-index="${players.indexOf(p)}" style="animation-delay: ${i * 0.05}s">
@@ -311,7 +336,28 @@ function renderRosterGrid(filtered) {
 // =============================================
 // ROSTER SPREADSHEET (LIST VIEW)
 // =============================================
+function renderPortraitMessage() {
+  return `<div class="portrait-message">
+    <div class="scoreboard">
+      <div class="scoreboard-inner">
+        <div class="scoreboard-row scoreboard-title">
+          <span class="scoreboard-light"></span>
+          <span>STATS</span>
+          <span class="scoreboard-light"></span>
+        </div>
+        <div class="scoreboard-row scoreboard-main">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+          <span>FLIP TO LANDSCAPE</span>
+        </div>
+        <div class="scoreboard-row scoreboard-sub">TO SEE FULL STATS</div>
+      </div>
+    </div>
+  </div>`;
+}
+
 function renderSpreadsheet(filtered) {
+  if (isPortrait()) return renderPortraitMessage();
+
   const cols = [
     { key: "_rank", label: "Rank", cls: "col-rank", nosort: true },
     { key: "number", label: "#", cls: "col-num" },
@@ -360,9 +406,9 @@ function renderSpreadsheet(filtered) {
       <td class="ss-td col-stat ss-highlight">${p.ppg}</td>
       <td class="ss-td col-stat">${p.rpg}</td>
       <td class="ss-td col-stat">${p.apg}</td>
-      <td class="ss-td col-stat">${p.fg > 0 ? p.fg.toFixed(1) : "—"}</td>
-      <td class="ss-td col-stat">${p.three > 0 ? p.three.toFixed(1) : "—"}</td>
-      <td class="ss-td col-stat">${p.ft > 0 ? p.ft.toFixed(1) : "—"}</td>
+      <td class="ss-td col-stat">${p.fg > 0 ? p.fg.toFixed(1) : "\u2014"}</td>
+      <td class="ss-td col-stat">${p.three > 0 ? p.three.toFixed(1) : "\u2014"}</td>
+      <td class="ss-td col-stat">${p.ft > 0 ? p.ft.toFixed(1) : "\u2014"}</td>
       <td class="ss-td col-stat">${p.stl}</td>
       <td class="ss-td col-stat">${p.blk}</td>
       <td class="ss-td col-stat ss-highlight">${totalPts}</td>
@@ -380,7 +426,7 @@ function renderSpreadsheet(filtered) {
 // =============================================
 function renderCoachesGrid() {
   return `<div class="roster-grid">${coaches.map((c, i) => `
-    <div class="player-card coach-card" style="animation-delay: ${i * 0.05}s">
+    <div class="player-card coach-card" data-coach="${i}" style="animation-delay: ${i * 0.05}s">
       <div class="player-avatar" style="background: #002244">
         ${c.photo ? `<img src="${c.photo}" alt="${c.name}" class="player-photo"
              onerror="handleImgError(this, '${c.name.replace(/'/g, "\\'")}', 'C')">` :
@@ -389,28 +435,22 @@ function renderCoachesGrid() {
       <div class="player-info">
         <h3 class="player-name">${c.name}</h3>
         <span class="coach-role">${c.role}</span>
-        <p class="coach-bio">${c.bio}</p>
       </div>
     </div>
   `).join("")}</div>`;
 }
 
 function renderCoachesList() {
-  return `<div class="roster-list">${coaches.map((c, i) => `
-    <div class="player-list-item" style="animation-delay: ${i * 0.03}s">
-      <div class="list-player-avatar" style="background: #002244">
-        ${c.photo ? `<img src="${c.photo}" alt="${c.name}" class="list-player-photo"
+  return `<div class="roster-grid">${coaches.map((c, i) => `
+    <div class="player-card coach-card" data-coach="${i}" style="animation-delay: ${i * 0.05}s">
+      <div class="player-avatar" style="background: #002244">
+        ${c.photo ? `<img src="${c.photo}" alt="${c.name}" class="player-photo"
              onerror="handleImgError(this, '${c.name.replace(/'/g, "\\'")}', 'C')">` :
           `<span class="player-initials">${getInitials(c.name)}</span>`}
       </div>
-      <div class="list-player-info">
-        <h3 class="list-player-name">${c.name}</h3>
-        <div class="list-player-meta">
-          <span class="coach-role">${c.role}</span>
-        </div>
-      </div>
-      <div class="list-player-stats">
-        <span style="font-size: 0.85rem; color: var(--gray-600); line-height: 1.5">${c.bio}</span>
+      <div class="player-info">
+        <h3 class="player-name">${c.name}</h3>
+        <span class="coach-role">${c.role}</span>
       </div>
     </div>
   `).join("")}</div>`;
@@ -425,7 +465,12 @@ function renderRoster() {
 
   if (currentFilter === "coaches") {
     if (sortControl) sortControl.style.display = "none";
-    container.innerHTML = rosterViewMode === "grid" ? renderCoachesGrid() : renderCoachesList();
+    container.innerHTML = renderCoachesGrid();
+    // Coach card click handlers
+    container.querySelectorAll("[data-coach]").forEach(el => {
+      el.addEventListener("click", () => openCoachModal(parseInt(el.dataset.coach)));
+      el.style.cursor = "pointer";
+    });
     return;
   }
 
@@ -459,7 +504,6 @@ function renderRoster() {
           sortField = key;
           sortDir = key === "name" ? "asc" : "desc";
         }
-        // Sync grid sort dropdown
         const gridSort = document.getElementById("gridSort");
         if (gridSort) gridSort.value = sortField;
         renderRoster();
@@ -491,7 +535,7 @@ function openPlayerModal(index) {
 
   const totalPts = Math.round(p.ppg * p.gp);
 
-  // FRONT OF CARD - photo + bio info only, no stats
+  // FRONT OF CARD
   front.innerHTML = `
     <div class="card-front-header">
       <img src="https://a.espncdn.com/i/teamlogos/ncaa/500/12.png" alt="AZ" class="card-team-logo">
@@ -533,15 +577,26 @@ function openPlayerModal(index) {
           <div class="card-bstat"><span class="card-bstat-val">${p.rpg}</span><span class="card-bstat-lbl">RPG</span></div>
           <div class="card-bstat"><span class="card-bstat-val">${p.apg}</span><span class="card-bstat-lbl">APG</span></div>
           <div class="card-bstat"><span class="card-bstat-val">${p.fg.toFixed(1)}%</span><span class="card-bstat-lbl">FG%</span></div>
-          <div class="card-bstat"><span class="card-bstat-val">${p.three > 0 ? p.three.toFixed(1) + "%" : "—"}</span><span class="card-bstat-lbl">3P%</span></div>
-          <div class="card-bstat"><span class="card-bstat-val">${p.ft > 0 ? p.ft.toFixed(1) + "%" : "—"}</span><span class="card-bstat-lbl">FT%</span></div>
+          <div class="card-bstat"><span class="card-bstat-val">${p.three > 0 ? p.three.toFixed(1) + "%" : "\u2014"}</span><span class="card-bstat-lbl">3P%</span></div>
+          <div class="card-bstat"><span class="card-bstat-val">${p.ft > 0 ? p.ft.toFixed(1) + "%" : "\u2014"}</span><span class="card-bstat-lbl">FT%</span></div>
           <div class="card-bstat"><span class="card-bstat-val">${p.stl}</span><span class="card-bstat-lbl">STL</span></div>
           <div class="card-bstat"><span class="card-bstat-val">${p.blk}</span><span class="card-bstat-lbl">BLK</span></div>
+          <div class="card-bstat"><span class="card-bstat-val">${totalPts}</span><span class="card-bstat-lbl">TOT PTS</span></div>
           <div class="card-bstat"><span class="card-bstat-val">${p.gp}</span><span class="card-bstat-lbl">GP</span></div>
           <div class="card-bstat"><span class="card-bstat-val">${p.min}</span><span class="card-bstat-lbl">MIN</span></div>
-          <div class="card-bstat"><span class="card-bstat-val">${totalPts}</span><span class="card-bstat-lbl">PTS</span></div>
-          <div class="card-bstat"><span class="card-bstat-val">${p.gp}</span><span class="card-bstat-lbl">GP</span></div>
+          <div class="card-bstat"><span class="card-bstat-val">${p.number}</span><span class="card-bstat-lbl">#</span></div>
         </div>
+      </div>` : ""}
+      ${p.careerGame ? `
+      <div class="card-back-section card-career-game">
+        <h4>Career Game</h4>
+        <div class="career-game-line">
+          <span class="cg-stat">${p.careerGame.pts} PTS</span>
+          <span class="cg-stat">${p.careerGame.reb} REB</span>
+          <span class="cg-stat">${p.careerGame.ast} AST</span>
+        </div>
+        <div class="cg-opponent">vs. ${p.careerGame.vs} &middot; ${p.careerGame.date}</div>
+        <p>${p.careerGame.summary}</p>
       </div>` : ""}
       <div class="card-back-section">
         <h4>About</h4>
@@ -573,6 +628,73 @@ function openPlayerModal(index) {
   document.body.style.overflow = "hidden";
 }
 
+// =============================================
+// COACH CARD MODAL
+// =============================================
+function openCoachModal(index) {
+  const c = coaches[index];
+  cardFlipped = false;
+  const modal = document.getElementById("playerModal");
+  const cardInner = document.getElementById("bballCard");
+  const front = document.getElementById("cardFront");
+  const back = document.getElementById("cardBack");
+
+  cardInner.classList.remove("flipped");
+
+  front.innerHTML = `
+    <div class="card-front-header">
+      <img src="https://a.espncdn.com/i/teamlogos/ncaa/500/12.png" alt="AZ" class="card-team-logo">
+      <div class="card-front-number" style="font-size:0.8rem; letter-spacing:1px">${c.role.toUpperCase()}</div>
+    </div>
+    <div class="card-front-photo" style="background: #002244">
+      ${c.photo ? `<img src="${c.photo}" alt="${c.name}" class="card-photo-img"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">` : ""}
+      <span class="card-photo-initials" style="${c.photo ? 'display:none' : 'display:flex'}">${getInitials(c.name)}</span>
+    </div>
+    <div class="card-front-info">
+      <h2 class="card-player-name">${c.name}</h2>
+      <div class="card-player-meta">
+        <span class="card-year-badge">${c.role}</span>
+      </div>
+    </div>
+    <div class="card-front-footer">
+      <span>ARIZONA WILDCATS</span>
+      <span>COACHING STAFF</span>
+    </div>
+    <div class="card-flip-hint">
+      <span class="flip-icon">&#8635;</span> Click to flip
+    </div>
+  `;
+
+  back.innerHTML = `
+    <div class="card-back-header">
+      <div class="card-back-name">${c.name}</div>
+    </div>
+    <div class="card-back-scroll">
+      <div class="card-back-section">
+        <h4>About</h4>
+        <p>${c.bio}</p>
+      </div>
+      <div class="card-back-section">
+        <h4>Highlights</h4>
+        <ul class="card-dyk-list">
+          ${c.highlights.map(h => `<li>${h}</li>`).join("")}
+        </ul>
+      </div>
+    </div>
+    <div class="card-front-footer">
+      <span>ARIZONA WILDCATS</span>
+      <span>COACHING STAFF</span>
+    </div>
+    <div class="card-flip-hint">
+      <span class="flip-icon">&#8635;</span> Click to flip back
+    </div>
+  `;
+
+  modal.classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+
 function flipCard() {
   const card = document.getElementById("bballCard");
   cardFlipped = !cardFlipped;
@@ -593,7 +715,6 @@ function closeModal() {
 function initHeroBackground() {
   const overlay = document.querySelector(".hero-overlay");
   if (!overlay) return;
-  // Create floating orbs
   for (let i = 0; i < 6; i++) {
     const orb = document.createElement("div");
     orb.className = "hero-orb";
@@ -611,27 +732,21 @@ function initHeroBackground() {
 }
 
 // =============================================
-// SWIPE SUPPORT FOR CARD
-// =============================================
-function initSwipeSupport() {
-  const cardContainer = document.querySelector(".bball-card-wrap");
-  if (!cardContainer) return;
-  let startX = 0;
-  cardContainer.addEventListener("touchstart", (e) => {
-    startX = e.touches[0].clientX;
-  }, { passive: true });
-  cardContainer.addEventListener("touchend", (e) => {
-    const diff = e.changedTouches[0].clientX - startX;
-    if (Math.abs(diff) > 50) flipCard();
-  }, { passive: true });
-}
-
-// =============================================
 // INIT
 // =============================================
 document.addEventListener("DOMContentLoaded", () => {
   initHeroBackground();
   renderRoster();
+
+  // Re-render on orientation change (for portrait/landscape message)
+  window.addEventListener("orientationchange", () => setTimeout(renderRoster, 100));
+  window.addEventListener("resize", (() => {
+    let last = isPortrait();
+    return () => {
+      const now = isPortrait();
+      if (now !== last) { last = now; renderRoster(); }
+    };
+  })());
 
   // Roster view toggle
   document.querySelectorAll(".roster .view-btn").forEach(btn => {
@@ -665,19 +780,24 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "Escape") closeModal();
   });
 
-  // Card flip on click
-  document.getElementById("bballCard").addEventListener("click", (e) => {
-    // Don't flip if clicking scrollable content on back
-    if (e.target.closest(".card-back-scroll") && cardFlipped) return;
-    flipCard();
-  });
+  // Card flip on click - both front AND back
+  document.getElementById("bballCard").addEventListener("click", flipCard);
 
-  // Swipe support
-  let startX = 0;
+  // Swipe support: horizontal = flip, vertical down = close
+  let startX = 0, startY = 0;
   const cardEl = document.getElementById("bballCard");
-  cardEl.addEventListener("touchstart", (e) => { startX = e.touches[0].clientX; }, { passive: true });
+  cardEl.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+  }, { passive: true });
   cardEl.addEventListener("touchend", (e) => {
-    const diff = e.changedTouches[0].clientX - startX;
-    if (Math.abs(diff) > 50) flipCard();
+    const diffX = e.changedTouches[0].clientX - startX;
+    const diffY = e.changedTouches[0].clientY - startY;
+    // If swipe down > 80px and more vertical than horizontal -> close
+    if (diffY > 80 && Math.abs(diffY) > Math.abs(diffX)) {
+      closeModal();
+    } else if (Math.abs(diffX) > 50 && Math.abs(diffX) > Math.abs(diffY)) {
+      flipCard();
+    }
   }, { passive: true });
 });

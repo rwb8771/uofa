@@ -1165,6 +1165,131 @@ body {
   margin-bottom: 4px;
 }
 
+/* Career Game Section */
+.card-career-game {
+  background: rgba(255,255,255,0.04);
+  border-radius: 8px;
+  padding: 12px !important;
+  border-left: 3px solid var(--red);
+}
+
+.career-game-line {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 6px;
+}
+
+.cg-stat {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.5px;
+}
+
+.cg-opponent {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+/* Portrait Scoreboard Message */
+.portrait-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.scoreboard {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0a0a1a 100%);
+  border-radius: 16px;
+  padding: 4px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.05);
+  max-width: 340px;
+  width: 100%;
+}
+
+.scoreboard-inner {
+  border: 2px solid rgba(204, 0, 51, 0.3);
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.scoreboard-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.scoreboard-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.scoreboard-light {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--red);
+  animation: lightBlink 1.5s ease-in-out infinite;
+}
+
+.scoreboard-light:nth-child(3) {
+  animation-delay: 0.75s;
+}
+
+@keyframes lightBlink {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; box-shadow: 0 0 8px var(--red); }
+}
+
+.scoreboard-main {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 2px;
+  gap: 10px;
+  margin-bottom: 8px;
+  animation: scoreSlide 0.8s ease both;
+}
+
+.scoreboard-main svg {
+  color: var(--red);
+  animation: rotatePhone 2s ease-in-out infinite;
+}
+
+@keyframes rotatePhone {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(90deg); }
+  50% { transform: rotate(90deg); }
+  75% { transform: rotate(0deg); }
+}
+
+@keyframes scoreSlide {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.scoreboard-sub {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 3px;
+  animation: scoreSlide 0.8s ease 0.2s both;
+}
+
 /* === List View (legacy support for coaches) === */
 .roster-list {
   display: flex;
@@ -1535,6 +1660,50 @@ body {
   .bball-card-wrap {
     width: 280px;
     height: 90vh;
+  }
+}
+
+/* Landscape spreadsheet: full width, no scroll, pinch-to-zoom */
+@media (orientation: landscape) and (max-width: 1024px) {
+  .ss-wrapper {
+    overflow-x: visible;
+    touch-action: pinch-zoom;
+  }
+
+  .ss-table {
+    min-width: 0;
+    width: 100%;
+    font-size: 0.7rem;
+  }
+
+  .ss-th {
+    padding: 8px 4px;
+    font-size: 0.6rem;
+    letter-spacing: 0;
+  }
+
+  .ss-td {
+    padding: 6px 3px;
+    font-size: 0.7rem;
+  }
+
+  .ss-avatar {
+    width: 22px;
+    height: 22px;
+  }
+
+  .ss-name {
+    font-size: 0.7rem;
+  }
+
+  .ss-th.col-name {
+    min-width: 100px;
+  }
+
+  .col-rank .rank-badge {
+    width: 20px;
+    height: 20px;
+    font-size: 0.55rem;
   }
 }
 
